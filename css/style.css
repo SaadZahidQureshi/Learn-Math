@@ -8,87 +8,95 @@
 body{
     margin: 0;
     padding: 0;
+    
 }
+
 .background-svg{
-    background-image: url('../assets/svg/Vector\ 1.svg');
-    height: 1024px;
-    width: 714px;
-    flex-shrink: 0;
+    background-image: url('../assets/svg/signup-left-background-svg.svg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.background-svg-login{
+    background-image: url('../assets/svg/Vector\ 11-left-side-background-svg-login-page.svg');
+    width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: contain;
 }
 .welcome-to{
-    color: #743FCB;
+    color: #FFF;
     font-family: Noto Sans;
-    font-size: 35px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    position: absolute;
-    top: 117px;
-    left: 40px;
-    right: 482px;
 }
 .susan-joy-act-math{
-    color: #743FCB;
+    color: #FFF;
     font-family: Noto Sans;
-    font-size: 48px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    position: absolute;
-    left: 41px;
-    top: 170px;
-    right: 236px;
 }
 .hero-image{
-    width: 590.947px;
-    height: 367px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 348px;
-    right: 106.05px;
-    bottom: 309px;
-    left: 17px;
+    width: 400px;
+    height: 350px;
 }
-.main-container{
-   position: relative;
-}
-.create-an-account{
-    color: #000;
+.sign-up{
+    color: #743FCB;
     font-family: Noto Sans;
-    font-size: 48px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+.profile-img{
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
 }
 .want-to-be-part{
     color: #232740;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .input-control{
-    width: 500px;
-    height: 50px;
+    width: 100%;
+    height: 40px;
     flex-shrink: 0;
     border-radius: 5px;
     border: 1px solid #743FCB;
     background: #FFF;
+    padding-left: 40px;
 }
 .input-svg{
-    top:15px;
+    top:9px;
+    left: 9px;
+}
+.bit-wide{
+    width: 20px;
+    height: 20px;
 }
 .submit-input-control{
     border-radius: 5px;
     background: #743FCB;
-    width: 500px;
-    height: 56px;
+    width: 100%;
+    height: 40px;
     flex-shrink: 0;
     color: #FFF;
     border: none;
+    color: #FFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 .or{
     color: #232740;
@@ -98,10 +106,11 @@ body{
     font-weight: 700;
     line-height: normal;
 }
-.continue-with-google{
+.continue-with-google {
     display: inline-flex;
-    height: 50px;
-    padding: 14px 146px 15px 146px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
     justify-content: center;
     align-items: flex-start;
     gap: 12px;
@@ -109,13 +118,57 @@ body{
     border-radius: 30px;
     border: 1px solid #743FCB;
     background: #FFF;
+
 }
 .continue-with-google p{
     color: #743FCB;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    opacity: 0.75;
+    opacity: .75;
+    }
+  .forgot-password p{
+    color: #743FCB;
+  }
+  /* Email varification page style */
+
+  .my-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .email-varification-heading{
+    color: #743FCB;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .email-varification-message{
+    color: #232740;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .current-email{
+    color: #232740;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  /* code verify page style */
+
+.main-container{
+    height: 100vh;
+    width: 100%;
 }
