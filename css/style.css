@@ -359,8 +359,14 @@ body{
 .slider-height{
     height: 8vh;
 }
+.list-container{
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
 .slider-items{
+    display: inline-block;
     padding: 5px 17px;
     border-radius: 50px;
     color: #C4C4C4;
@@ -374,8 +380,6 @@ body{
     color: white;
     border: 1px solid #743FCB;
     background: #743FCB;
-    width: 100px;
-    height: 48px;
     flex-shrink: 0;
     
 }

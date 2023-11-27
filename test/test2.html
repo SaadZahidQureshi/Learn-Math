@@ -1,165 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .row {
-      overflow: hidden;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Question</title>
+  </head>
+  <body>
+    <!-- <nav class="navbar shadow-sm d-flex justify-content-between">
+      <div
+        class="d-flex w-100 justify-content-between align-items-center ps-5 pe-5"
+      >
+        <div class="">
+          <div class="container">
+            <img
+              src="../assets/svg/google.svg"
+              alt="Logo"
+              style="width: 35px; height: 35px"
+            />
+          </div>
+        </div>
+        <div class="">
+          <ul class="nav align-items-center">
+            <li class="nav-link">
+              <a class="nav-item active" href="">Home</a>
+            </li>
+            <li class="nav-link">
+              <div class="d-flex justify-content-between align-items-center">
+                <a
+                  class="nav-items-fonts-props nav-item text-decoration-none text-dark"
+                  href=""
+                  >My Progress</a
+                >
+                <img class="w-25" src="../assets/svg/Group 15.svg" alt="" />
+              </div>
+            </li>
+            <li class="nav-link">
+              <a
+                class="nav-items-fonts-props nav-item text-decoration-none text-dark"
+                href=""
+                >Settings</a
+              >
+            </li>
+            <li class="nav-link">
+              <a class="nav-item text-decoration-none popuz-quiz" href=""
+                >Popup Quiz</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
 
-    .slider {
-      display: flex;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      position: relative;
-    }
+    <!-- <div class="container-fluid">
+      <div class="row justify-content-center mt-2">
+        <div class="content rounded ps-0 pe-0">
+          <div>
+            <p class="trignometory">Trignometory</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
-    .slider a {
-      text-decoration: none;
-      padding: 5px;
-      border-radius: 5px;
-    }
+    <div class="row bg-light w-100 slider-height border m-0 position-relative">
+      <div
+        class="slider d-flex justify-content-center align-items-center p-0 m-0"
+      >
+        <div class="position-absolute prev-button">
+          <div class="me-2 position-relative">
+            <a href="#" onclick="prevSlide()">
+              <img src="../assets/svg/whole.svg" alt="" />
+              <img
+                class="previous-icon position-absolute"
+                src="../assets/svg/arrow_back_ios_black_24dp 1.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
 
-    .slider-items {
-      text-decoration: none;
-      padding: 5px;
-      border-radius: 5px;
-      background-color: #fff; /* Add background color if needed */
-      margin: 0 5px;
-    }
+        <div class="d-flex p-2 justify-content-center align-items-center gap-2 list-container ms-1  border" id="slider-content">
+          <div class="">
+            <a class="slider-items slider-items-active text-decoration-none" href="">Level 1</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 2</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 3</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 4</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 5</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 6</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 7</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 8</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 9</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 10</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 11</a>
+          </div>
+          <div class="">
+            <a class="slider-items text-decoration-none" href="">Level 12</a>
+          </div>
+          <div class="">
+            <a class=" slider-items text-decoration-none " href="">Level 13</a>
+            </div>
+            <div class="">
+                <a class="slider-items text-decoration-none" href="">Level 14</a>
+            </div>
+            <div class="">
+                <a class="slider-items text-decoration-none" href="">Level 15</a>
+            </div>
+            <div class="">
+              <a class=" slider-items text-decoration-none " href="">Level 16</a>
+              </div>
+              <div class="">
+                  <a class="slider-items text-decoration-none" href="">Level 17</a>
+              </div>
+              <div class="">
+                  <a class="slider-items text-decoration-none" href="">Level 18</a>
+              </div>
+        </div>
 
-    .previous-icon, .next-icon {
-      width: 20px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
-
-    .previous-icon {
-      left: -30px;
-    }
-
-    .next-icon {
-      right: -30px;
-    }
-
-    .list-container {
-      display: flex;
-      overflow: hidden;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .list-items {
-      flex: 0 0 8%; /* Show 12 items at a time, adjust as needed */
-      text-align: center;
-      margin: 0 5px;
-    }
-  </style>
-</head>
-<body>
-
-<div class="row bg-light w-100 slider-height border m-0 position-relative">
-  <div class="slider d-flex justify-content-center align-items-center p-0 m-0">
-    <div class="position-absolute prev-button">
-      <div class="me-2 position-relative ">
-        <a href="#" onclick="prevSlide()">
-          <img src="../assets/svg/whole.svg" alt="" />
-          <img
-            class="previous-icon position-absolute"
-            src="../assets/svg/arrow_back_ios_black_24dp 1.svg"
-            alt=""
-          />
-        </a>
+        <div class="position-absolute next-button">
+          <div class="ms-2 position-relative">
+            <a href="#" onclick="nextSlide()">
+              <img src="../assets/svg/whole.svg" alt="" />
+              <img
+                class="next-icon position-absolute"
+                src="../assets/svg/arrow_next_ios_black_24dp 1.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="list-container" id="slider-content">
-      <div class="">
-        <a class="list-items slider-items-active text-decoration-none" href="">Level 1</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 2</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 3</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 4</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 5</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 6</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 7</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 8</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 9</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 10</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 11</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 12</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 13</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 14</a>
-      </div>
-      <div class="">
-        <a class="list-items text-decoration-none" href="">Level 15</a>
-      </div>
-      <!-- Add more list items as needed -->
-    </div>
+    <!-- <div class="container-fluid">
+      <div class="row justify-content-center mt-2"></div>
 
-    <div class="position-absolute next-button">
-      <div class="ms-2 position-relative">
-        <a href="#" onclick="nextSlide()">
-          <img src="../assets/svg/whole.svg" alt="" />
-          <img
-            class="next-icon position-absolute"
-            src="../assets/svg/arrow_next_ios_black_24dp 1.png"
-            alt=""
-          />
-        </a>
+      <div class="row justify-content-center">
+        <div class="content rounded ps-0 pe-0">
+          <div class="d-flex gap-2 mt-1">
+            <div class="row w-100">
+              <div class="col-9">
+                <div class="">
+                  <div class="row">
+                    <div class="col">
+                      <div>
+                        <p class="mark-the-one">
+                          Mark the one option which you think is the correct
+                          answer
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="d-flex gap-1">
+                        <div class="position-relative">
+                          <img src="../assets/svg/Subtract.svg" alt="" />
+                          <p class="ten position-absolute">00</p>
+                        </div>
+                        <div class="position-relative">
+                          <img src="../assets/svg/Subtract.svg" alt="" />
+                          <p class="ten position-absolute">00</p>
+                        </div>
+                        <div class="position-relative">
+                          <img src="../assets/svg/Subtract.svg" alt="" />
+                          <p class="ten position-absolute">10</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <p class="question-no-1">Question no 1.</p>
+                  </div>
+                  <pre class="a-article">
+A particle is moving along a line. Its displacement (in meters) after thours is:
+s(t)=
+–
+6t+7
+Find the average velocity over the interval [7,16].
+Write your answer as an integer, fraction, or decimal rounded to the nearest tenth. Simplify any fractions.
+metersperhour
+</pre
+                  >
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="mt-2">
+                      <a
+                        class="option-selected options d-flex justify-content-start align-items-center text-decoration-none"
+                        href=""
+                        ><p class="first-p p-0 m-0">(A)</p>
+                        <p class="last-p m-0 ps-1">6.5 meters per hour</p></a
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="mt-2">
+                      <a
+                        class="options d-flex justify-content-start align-items-center text-decoration-none"
+                        href=""
+                        ><p class="first-p p-0 m-0">(B)</p>
+                        <p class="last-p m-0 ps-1">3 meters per hour</p></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="mt-2">
+                      <a
+                        class="options d-flex justify-content-start align-items-center text-decoration-none"
+                        href=""
+                        ><p class="first-p p-0 m-0">(C)</p>
+                        <p class="last-p m-0 ps-1">3.54 meters per hour</p></a
+                      >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="mt-2">
+                      <a
+                        class="options d-flex justify-content-start align-items-center text-decoration-none"
+                        href=""
+                        ><p class="first-p p-0 m-0">(D)</p>
+                        <p class="last-p m-0 ps-1">None of these</p></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="d-flex justify-content-around align-items-center cotent-container-answered p-2"
+                >
+                  <div class="">
+                    <img
+                      src="../assets/svg/answered-qs.svg"
+                      alt="answered-qs"
+                    />
+                  </div>
+                  <div class=" ">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center "
+                    >
+                      <div class="">
+                        <p class="answered-qs p-0 m-0">Answered Questions</p>
+                      </div>
+                      <div>
+                        <p class="answered-qs p-0 m-0">0/10</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-around align-items-center cotent-container-correct p-2 mt-2"
+                >
+                  <div class="">
+                    <img
+                      src="../assets/svg/correct-ans.svg"
+                      alt="answered-qs"
+                    />
+                  </div>
+                  <div class="">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <div>
+                        <p class="answered-qs p-0 m-0">Correct Questions</p>
+                      </div>
+                      <div>
+                        <p class="answered-qs p-0 m-0">0/10</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-around align-items-center cotent-container-wrong p-2 mt-2"
+                >
+                  <div class="">
+                    <img src="../assets/svg/wrong-ans.svg" alt="answered-qs" />
+                  </div>
+                  <div class="">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center "
+                    >
+                      <div>
+                        <p class="answered-qs p-0 m-0">Wrong Questions</p>
+                      </div>
+                      <div>
+                        <p class="answered-qs p-0 m-0">0/10</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
+    </div> -->
+  </body>
 
-<script>
-  let currentIndexList = 0;
-  const listContainer = document.getElementById('slider-content');
-  const totalListItems = document.querySelectorAll('.list-items').length;
+  <script>
+    let currentIndexList = 0;
+    let listContainer = document.getElementById("slider-content");
+    let totalListItems = document.getElementsByClassName("slider-items").length;
+    console.log(totalListItems);
 
-  function updateList() {
-    const newPosition = -currentIndexList * 8 + '%'; /* 8% represents each list item width */
-    listContainer.style.transform = 'translateX(' + newPosition + ')';
-  }
-
-  function nextSlide() {
-    currentIndexList = (currentIndexList + 12) % totalListItems;
-    updateList();
-  }
-
-  function prevSlide() {
-    currentIndexList = (currentIndexList - 12 + totalListItems) % totalListItems;
-    updateList();
-  }
-</script>
-
-</body>
+    function updateList() {
+      const newPosition = -currentIndexList * 8 + "%";
+      listContainer.style.transform = "translateX(" + newPosition + ")";
+    }
+    function nextSlide() {
+      if (currentIndexList < totalListItems - 12) {
+        currentIndexList++;
+      }
+      console.log("Next Slide: currentIndexList =", currentIndexList);
+      updateList();
+    }
+    function prevSlide() {
+      if (currentIndexList > 0) {
+        currentIndexList--;
+      }
+      console.log("Prev Slide: currentIndexList =", currentIndexList);
+      updateList();
+    }
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
 </html>
