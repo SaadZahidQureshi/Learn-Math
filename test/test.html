@@ -1,49 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <style>
-        .right ul{
-            border: 1px solid black;
-            padding: 5px;
-        }
-        li{
-            display: inline;
-            
-            
-        }
-        li a{
-            display: inline-block;
-            border: 1px solid red;
-            padding: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .row {
+      overflow: hidden;
+    }
+
+    .slider {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider a {
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .slider-items {
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #fff; /* Add background color if needed */
+      margin: 0 5px;
+    }
+
+    .previous-icon, .next-icon {
+      width: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .previous-icon {
+      left: -30px;
+    }
+
+    .next-icon {
+      right: -30px;
+    }
+
+    .slider-list {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .list-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .list-items {
+      flex: 0 0 20%; /* Show 5 items at a time, adjust as needed */
+      text-align: center;
+      margin: 0 5px;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar border border-danger">
-        <div class="container border border-dark d-flex justify-content-between align-items-center">
-            <div class="left">
-                <div class=""><img src="../assets/svg/google.svg" alt=""></div>
-            </div>
-            <div class="right">
-                <div class="">
-                    <ul>
-                        <li><a href="">Home1</a></li>
-                        <li><a href="">Home2</a></li>
-                        <li><a href="">Home3</a></li>
-                        <li><a href="">Home4</a></li>
-                    </ul>
+
+    <div class="row bg-light w-100 slider-height border m-0 position-relative">
+        <div class="slider d-flex justify-content-center align-items-center p-0 m-0 ">
+          
+            <div class="position-absolute prev-button">
+              <div class="me-2 position-relative ">
+                  <a href="" onclick="prevSlide()">
+                    <img src="../assets/svg/whole.svg" alt="" />
+                    <img
+                      class="previous-icon position-absolute"
+                      src="../assets/svg/arrow_back_ios_black_24dp 1.svg"
+                      alt=""
+                    />
+                  </a>
                 </div>
+          </div>
+  
+          <div class="d-flex p-2 gap-3 list-container ms-1" id="slider-content">
+            <div class="">
+              <a class="slider-items slider-items-active text-decoration-none" href="">Level 1</a>
             </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 2</a>
+            </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 3</a>
+            </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 4</a>
+            </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 5</a>
+            </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 6</a>
+            </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 7</a>
+            </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 8</a>
+            </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 9</a>
+            </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 10</a>
+            </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 11</a>
+            </div>
+            <div class="">
+              <a class="slider-items text-decoration-none" href="">Level 12</a>
+            </div>
+            <!-- <div class="">
+              <a class=" slider-items text-decoration-none " href="">Level 13</a>
+              </div>
+              <div class="">
+                  <a class="slider-items text-decoration-none" href="">Level 14</a>
+              </div>
+              <div class="">
+                  <a class="slider-items text-decoration-none" href="">Level 15</a>
+              </div> -->
+          </div>
+  
+          <div class="position-absolute next-button">
+              <div class="ms-2 position-relative">
+                  <a href="" onclick="nextSlide()">
+                    <img src="../assets/svg/whole.svg" alt="" />
+                    <img
+                      class="next-icon position-absolute"
+                      src="../assets/svg/arrow_next_ios_black_24dp 1.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+          </div>
+
         </div>
-    </nav>
+    </div>
+
+
 </body>
+
+<script>
+    let currentIndexList = 0;
+    const listContainer = document.getElementById('sliderContent');
+    const totalListItems = document.querySelectorAll('.list-items').length;
+  
+    function updateList() {
+      const newPosition = -currentIndexList * 20 + '%'; /* 20% represents each list item width */
+      listContainer.style.transform = 'translateX(' + newPosition + ')';
+    }
+  
+    function nextSlideList() {
+      if (currentIndexList < totalListItems - 5) {
+        currentIndexList++;
+      }
+      updateList();
+    }
+  
+    function prevSlideList() {
+      if (currentIndexList > 0) {
+        currentIndexList--;
+      }
+      updateList();
+    }
+  </script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"
+  ></script>
 </html>
