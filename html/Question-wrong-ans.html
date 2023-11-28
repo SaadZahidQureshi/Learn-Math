@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../assets/components/roundSlider-1.6.1/roundSlider-1.6.1/src/roundslider.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Question</title>
+    <title>Question-2</title>
   </head>
   <body>
     <nav class="navbar shadow-sm d-flex justify-content-between">
@@ -179,13 +179,15 @@
     <div class="container-fluid">
       <div class="row justify-content-center mt-2"></div>
 
-      <div class="row justify-content-center">
+      <div class="row justify-content-center ">
         <div class="content rounded ps-0 pe-0">
           <div class="d-flex gap-2 mt-1">
-            <div class="row w-100">
-              <div class="col-9">
+            <div class="row justify-content-center border">
+              <div class="col-9  ">
+                <!-- main content of question -->
                 <div class="">
-                  <div class="row">
+                    <!-- Mark the one option which you think is the correctanswer -->
+                  <div class="row">            
                     <div class="col">
                       <div>
                         <p class="mark-the-one">
@@ -194,7 +196,7 @@
                         </p>
                       </div>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto ">
                       <div class="d-flex gap-1">
                         <div class="position-relative">
                           <img src="../assets/svg/Subtract.svg" alt="" />
@@ -211,68 +213,28 @@
                       </div>
                     </div>
                   </div>
+                  <!-- Question no 1. -->
                   <div class="">
                     <p class="question-no-1">Question no 1.</p>
                   </div>
-                  <pre class="a-article">
-A particle is moving along a line. Its displacement (in meters) after thours is:
-s(t)=
-–
-6t+7
-Find the average velocity over the interval [7,16].
-Write your answer as an integer, fraction, or decimal rounded to the nearest tenth. Simplify any fractions.
-metersperhour
-</pre
-                  >
+                  <!-- Actual question body -->
+                  <div class="">
+                    <pre class="a-article">
+What is the domain of this exponential function?</pre>
+                  </div>
+                  <!-- Question image  -->
+                  <div class="">
+                    <img class="graph-border" src="../assets/svg/graph-qs.svg" alt="">
+                  </div>
+                
                 </div>
-
-                <div class="row">
-                  <div class="col">
-                    <div class="mt-2">
-                      <a
-                        class="option-selected options d-flex justify-content-start align-items-center text-decoration-none"
-                        href=""
-                        ><p class="first-p p-0 m-0">(A)</p>
-                        <p class="last-p m-0 ps-1">6.5 meters per hour</p></a
-                      >
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="mt-2">
-                      <a
-                        class="options d-flex justify-content-start align-items-center text-decoration-none"
-                        href=""
-                        ><p class="first-p p-0 m-0">(B)</p>
-                        <p class="last-p m-0 ps-1">3 meters per hour</p></a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="mt-2">
-                      <a
-                        class="options d-flex justify-content-start align-items-center text-decoration-none"
-                        href=""
-                        ><p class="first-p p-0 m-0">(C)</p>
-                        <p class="last-p m-0 ps-1">3.54 meters per hour</p></a
-                      >
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="mt-2">
-                      <a
-                        class="options d-flex justify-content-start align-items-center text-decoration-none"
-                        href=""
-                        ><p class="first-p p-0 m-0">(D)</p>
-                        <p class="last-p m-0 ps-1">None of these</p></a
-                      >
-                    </div>
-                  </div>
-                </div>
+                
+                
+                
               </div>
-              <div class="col">
-                <div
+              <div class="col d-flex flex-column justify-content-between">
+                <div class="">
+                    <div
                   class="d-flex justify-content-around align-items-center cotent-container-answered p-2"
                 >
                   <div class="">
@@ -281,7 +243,7 @@ metersperhour
                       alt="answered-qs"
                     />
                   </div>
-                  <div class=" ">
+                  <div class="">
                     <div
                       class="d-flex flex-column align-items-center justify-content-center "
                     >
@@ -293,50 +255,126 @@ metersperhour
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div
-                  class="d-flex justify-content-around align-items-center cotent-container-correct p-2 mt-2"
-                >
-                  <div class="">
-                    <img
-                      src="../assets/svg/correct-ans.svg"
-                      alt="answered-qs"
-                    />
-                  </div>
-                  <div class="">
-                    <div
-                      class="d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <div>
-                        <p class="answered-qs p-0 m-0">Correct Questions</p>
-                      </div>
-                      <div>
-                        <p class="answered-qs p-0 m-0">0/10</p>
-                      </div>
                     </div>
-                  </div>
-                </div>
 
-                <div
-                  class="d-flex justify-content-around align-items-center cotent-container-wrong p-2 mt-2"
-                >
-                  <div class="">
-                    <img src="../assets/svg/wrong-ans.svg" alt="answered-qs" />
-                  </div>
-                  <div class="">
                     <div
-                      class="d-flex flex-column align-items-center justify-content-center "
+                    class="d-flex justify-content-around align-items-center cotent-container-correct p-2 mt-2"
                     >
-                      <div>
-                        <p class="answered-qs p-0 m-0">Wrong Questions</p>
-                      </div>
-                      <div>
-                        <p class="answered-qs p-0 m-0">0/10</p>
-                      </div>
+                    <div class="">
+                        <img
+                        src="../assets/svg/correct-ans.svg"
+                        alt="answered-qs"
+                        />
                     </div>
-                  </div>
+                    <div class="">
+                        <div
+                        class="d-flex flex-column align-items-center justify-content-center"
+                        >
+                        <div>
+                            <p class="answered-qs p-0 m-0">Correct Questions</p>
+                        </div>
+                        <div>
+                            <p class="answered-qs p-0 m-0">0/10</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div
+                    class="d-flex justify-content-around align-items-center cotent-container-wrong p-2 mt-2"
+                    >
+                    <div class="">
+                        <img src="../assets/svg/wrong-ans.svg" alt="answered-qs" />
+                    </div>
+                    <div class="">
+                        <div
+                        class="d-flex flex-column align-items-center justify-content-center "
+                        >
+                        <div>
+                            <p class="answered-qs p-0 m-0">Wrong Questions</p>
+                        </div>
+                        <div>
+                            <p class="answered-qs p-0 m-0">0/10</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+               
+              </div>
+              
+              <div class="row ">
+                  <!-- MCQs options -->
+                  <div class="row d-flex justify-content-between p-0 m-0">
+                    <div class="col-8 ">
+                        <div class="row  w-75">
+                            <div class="col">
+                              <div class="mt-2">
+                                <a
+                                  class=" options d-flex justify-content-start align-items-center text-decoration-none"
+                                  href=""
+                                  ><p class="first-p p-0 m-0">(A)</p>
+                                  <p class="last-p m-0 ps-1">-5</p></a
+                                >
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="mt-2">
+                                <a
+                                  class="options d-flex justify-content-start align-items-center text-decoration-none"
+                                  href=""
+                                  ><p class="first-p p-0 m-0">(B)</p>
+                                  <p class="last-p m-0 ps-1">5</p></a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row  w-75">
+                            <div class="col">
+                              <div class="mt-2">
+                                <a
+                                  class="option-selected-wrong options d-flex justify-content-start align-items-center text-decoration-none"
+                                  href=""
+                                  ><p class="first-p p-0 m-0">(C)</p>
+                                  <p class="last-p m-0 ps-1">-∞ , -5 </p></a
+                                >
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="mt-2">
+                                <a
+                                  class="options d-flex justify-content-start align-items-center text-decoration-none"
+                                  href=""
+                                  ><p class="first-p p-0 m-0">(D)</p>
+                                  <p class="last-p m-0 ps-1">∞ , -∞</p></a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col m-0 p-0">   
+                        <div
+                        class="d-flex justify-content-around align-items-center cotent-container-wrong-message "
+                        >
+                        <div class="">
+                        <div
+                            class="d-flex flex-column align-items-center justify-content-center "
+                        >
+                            <div>
+                            <h1 class="sorry-your-answer p-0 m-0">Sorry ! your Answer is incorrect</h1>
+                            </div>
+                            <div>
+                            <h2 class="watch-video p-0 m-0">Watch the video</h2>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row border">
+                <video class="w-100 h-25" src="https://youtu.be/deIQeQzPK08?si=8QyzeZpTz-lpZN7_"></video>
               </div>
             </div>
           </div>
@@ -345,6 +383,8 @@ metersperhour
     </div>
   </body>
   <script src="../js/main.js"></script>
+
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -348,6 +348,10 @@ body{
 
 /* Question page style */
 
+.round-slider{
+    width: 50px ;
+    height: 50px;
+}
 .trignometory{
     color: #743FCB;
     font-family: 'Roboto';
@@ -359,14 +363,22 @@ body{
 .slider-height{
     height: 8vh;
 }
-.list-container{
+.slider-list{
+    display: flex;
+    transition: transform 0.5s ease; 
+}
+
+.slider-container{
     width: 90%;
     overflow: hidden;
     white-space: nowrap;
 }
 
 .slider-items{
-    display: inline-block;
+    width: 10%; /* Set the width of each item */
+    flex-shrink: 0;
+}
+.slider-items a{ 
     padding: 5px 17px;
     border-radius: 50px;
     color: #C4C4C4;
@@ -376,13 +388,12 @@ body{
     font-weight: 500;
     line-height: normal;
 }
-.slider-items-active {
-    color: white;
-    border: 1px solid #743FCB;
+.slider-active{
+    color: white !important;
     background: #743FCB;
     flex-shrink: 0;
-    
 }
+
 .prev-button{
     top: 6px;
     left: 20px;
@@ -471,6 +482,18 @@ body{
     background: #5AA139;
     color: white;
 }
+
+.option-selected-wrong{
+    white-space: inherit;
+    width: 230px;
+    padding: 10px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #F14336;
+    color: white;
+}
+
 .cotent-container-answered{
     border-radius: 5px;
     border: 1px solid #E9AC06;
@@ -486,6 +509,12 @@ body{
     border: 1px solid #F14336;
     background: #FFF;
 }
+
+.cotent-container-wrong-message{
+    height: 115px;
+    border-radius: 5px;
+    background: #FEE;
+}
 .answered-qs{
     color: #232740;
     font-family: Roboto;
@@ -493,4 +522,20 @@ body{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+/* question-2 page style */
+.graph-border{
+    border: 5px solid lightskyblue;
+}
+.sorry-your-answer{
+    color: #F14336;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.watch-video{
+    font-family: Roboto;
+    font-weight: 400;
 }
