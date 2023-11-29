@@ -2,11 +2,17 @@
 
 const sliderList = document.getElementById('slider-list');
 const sliderItems = document.querySelectorAll('.slider-items');
+
 const itemWidth = sliderItems[0].offsetWidth;
 const totalItems = sliderItems.length;
+// currentIndex = sliderItems[9]
+// console.log(currentIndex)
 let currentIndex = 0;
 
 function nextSlide() {
+  // if(currentIndex == 9){
+  //   sliderItems+1
+  // }
   currentIndex = (currentIndex + 1) % totalItems;
   updateSlider();
 }
@@ -57,9 +63,9 @@ function updateCounter() {
       var second = Math.floor(seconds % 60);
 
       // Display the time counter in the specified container
-      var counterContainer = document.getElementById("time-counter-container");
-      document.getElementById('hour').innerText = hour;
-      document.getElementById('minut').innerText = minut;
+      // var counterContainer = document.getElementById("time-counter-container");
+      // document.getElementById('hour').innerText = hour;
+      // document.getElementById('minut').innerText = minut;
       // document.getElementById('second').innerText = second;
 
       if(second <10){

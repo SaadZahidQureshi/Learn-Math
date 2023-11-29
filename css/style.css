@@ -277,13 +277,14 @@ body{
 }
 /* home page style  */
 
+.banner-container{
+    height: 18vh;
+
+}
 .banner{
-    width: 92%;
-    height: 25vh;
-    border-radius: 15px;
     background-image: url(../assets/svg/banner-img.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .grow-your-skill{
     color: #FFF;
@@ -333,7 +334,7 @@ body{
 }
 
 .card{
-    width: 27rem;
+    width: 26.3rem;
     cursor: pointer;
 }
 .card-title{
@@ -384,6 +385,7 @@ body{
 .slider-items{
     width: 10%; /* Set the width of each item */
     flex-shrink: 0;
+    padding: 5px;
 }
 .slider-items a{ 
     padding: 5px 17px;
