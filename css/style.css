@@ -12,6 +12,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 
 .background-svg{
@@ -320,6 +321,7 @@ body{
 .content{
     width: 92%;
 }
+
 .choose-your-fav{
     color: #232740;
     font-family: 'Roboto';
@@ -328,6 +330,11 @@ body{
     font-weight: 400;
     line-height: normal;
 
+}
+
+.card{
+    width: 27rem;
+    cursor: pointer;
 }
 .card-title{
     color: #232740;
@@ -369,7 +376,7 @@ body{
 }
 
 .slider-container{
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -425,7 +432,7 @@ body{
 }
 .question-no-1{
     color: #232740;
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -451,7 +458,7 @@ body{
 }
 
 .options{
-    width: 242px;
+    width: 250px;
     height: 50px;
     flex-shrink: 0;
     border-radius: 30px;
@@ -474,7 +481,7 @@ body{
 }
 .option-selected{
     white-space: inherit;
-    width: 230px;
+
     padding: 10px;
     height: 50px;
     flex-shrink: 0;
@@ -538,4 +545,23 @@ body{
 .watch-video{
     font-family: Roboto;
     font-weight: 400;
+}
+.embaded-video{
+    height: 50vh;
+    width: 100%; 
+}
+.re-attempt-or-skip{
+    display: inline-flex;
+    padding: 8px 26px 8px 27px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #743FCB;
+    border-radius: 5px;
+    border: 1px solid #743FCB;
+
+}
+
+.message-end{
+    background: rgba(255, 241, 199, 0.84);
 }

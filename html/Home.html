@@ -9,147 +9,191 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../assets/components/roundSlider-1.6.1/roundSlider-1.6.1/src/roundslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../assets/components/roundSlider-1.6.1/roundSlider-1.6.1/src/roundslider.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
     <title>Home</title>
   </head>
   <body>
-    <nav class="navbar shadow-sm d-flex justify-content-between">
-        <div class="d-flex w-100 justify-content-between align-items-center ps-5 pe-5">
-          <div class="">
-            <div class="container">
-              <img
-                src="../assets/svg/google.svg"
-                alt="Logo"
-                style="width: 35px; height: 35px"
-              />
+  
+<!-- error -->
+<div class="slider-items"></div>
+<!-- error  -->
+
+
+    <!-- mian container  -->
+    <div class="container-fluid m-0 p-0">
+      <nav class="navbar shadow-sm d-flex justify-content-between">
+          <div
+            class="d-flex w-100 justify-content-between align-items-center ps-5 pe-5"
+          >
+            <div class="">
+              <div class="container">
+                <img
+                  src="../assets/svg/google.svg"
+                  alt="Logo"
+                  style="width: 35px; height: 35px"
+                />
+              </div>
             </div>
-          </div>
-          <div class="">
-            <ul class="nav align-items-center">
-              <li class="nav-link">
-                <a
-                  class=" nav-item active"
-                  href=""
-                  >Home</a
-                >
-              </li>
-              <li class="nav-link">
-                <div class="d-flex justify-content-between align-items-center">
+            <div class="">
+              <ul class="nav align-items-center">
+                <li class="nav-link">
+                  <a class="nav-item active" href="../html/Home.html">Home</a>
+                </li>
+                <li class="nav-link">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a
+                      class="nav-items-fonts-props nav-item text-decoration-none text-dark"
+                      href=""
+                      >My Progress</a
+                    >
+                    <div class="round-slider ms-1" ></div>
+                  </div>
+                </li>
+                <li class="nav-link">
                   <a
                     class="nav-items-fonts-props nav-item text-decoration-none text-dark"
-                    href=""
-                    >My Progress</a
+                    href="../html/Profile-Setting.html"
+                    >Settings</a
                   >
-                  <img class="w-25" src="../assets/svg/Group 15.svg" alt="" />
-                </div>
-              </li>
-              <li class="nav-link">
-                <a class="nav-items-fonts-props nav-item text-decoration-none text-dark" href="">Settings</a>
-              </li>
-              <li class="nav-link">
-                <a class="nav-item text-decoration-none popuz-quiz" href=""
-                  >Popup Quiz</a
-                >
-              </li>
-            </ul>
+                </li>
+                <li class="nav-link">
+                  <a class="nav-item text-decoration-none popuz-quiz" href=""
+                    >Popup Quiz</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
       </nav>
 
+      <!-- main container  -->
       <div class="container-fluid">
-        <div class="row justify-content-center mt-2">
-            <div class="banner d-flex align-items-center">
-              <div class="container ms-2">
-                <div class="">
-                  <h4 class="grow-your-skill">
-                    Grow your skills to improve your career
-                  </h4>
-                </div>
-                <div class="d-flex gap-4">
-                  <div class="position-relative">
-                    <img src="../assets/svg/banner-img-0.svg" alt="" />
-                    <img
-                      class="banner-img-1"
-                      src="../assets/svg/banner-img-1.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="">
-                    <h5 class="millions-of">Millions of people are learning here...</h5>
-                  </div>
+      <!-- banner container -->
+        <div class="row justify-content-center mt-3">
+          <div class="banner d-flex align-items-center">
+            <div class="container ms-2">
+              <div class="">
+                <h4 class="grow-your-skill">
+                  Grow your skills to improve your career
+                </h4>
+              </div>
+              <div class="d-flex gap-4">
+                <div class="position-relative">
+                  <img src="../assets/svg/banner-img-0.svg" alt="" />
+                  <img
+                    class="banner-img-1"
+                    src="../assets/svg/banner-img-1.svg"
+                    alt=""
+                  />
                 </div>
                 <div class="">
-                  <button class="lets-get-started border-0">Let's Get Started</button>
+                  <h5 class="millions-of">Millions of people are learning here...</h5>
                 </div>
+              </div>
+              <div class="">
+                <button class="lets-get-started border-0">Let's Get Started</button>
               </div>
             </div>
           </div>
-      
-          <div class="row justify-content-center">
-              <div class="content rounded ps-0 pe-0" >
-                  <div>
-                      <h2 class="categories">Categories</h2>
-                  </div>
-                  <div class="mb-1">
-                      <p class="choose-your-fav m-0 p-0">Choose your favourite category to get in and start your quiz to test your knowledge </p>
-                  </div>
-      
-                  <div class="d-flex justify-content-center flex-wrap gap-2 ">
-                      <div class="card border-0 shadow-sm " style="width: 28.5rem;">
-                          <img src="../assets/svg/pre-calculus.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Pre Calculus</h5>
-                            <p class="card-text">The Precalculus course covers complex numbers; composite functions; trigonometric functions; vectors; matrices; conic sections; and probability</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                          </div>
-                        </div>
-                        <div class="card border-0 shadow-sm" style="width: 28.5rem;">
-                          <img src="../assets/svg/calculus.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Calculus</h5>
-                            <p class="card-text">Calculus, originally called infinitesimal calculus or "the calculus of infinitesimals", is the mathematical study of continuous change</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                          </div>
-                        </div>
-                        <div class="card border-0 shadow-sm" style="width: 28.5rem;">
-                          <img src="../assets/svg/algebra-1.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Algebra</h5>
-                            <p class="card-text">The part of mathematics in which letters and other general symbols are used to represent numbers and quantities in formulae and equations.</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                          </div>
-                        </div>
-                        <div class="card border-0 shadow-sm" style="width: 28.5rem;">
-                          <img src="../assets/svg/algebra-2.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Algebra 2</h5>
-                            <p class="card-text">Algebra 2 is the third math course in high school and will guide you through among other things linear equations, inequalities, graphs, matrices, polynomials and radical expressions.</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                          </div>
-                        </div>
-                        <div class="card border-0 shadow-sm" style="width: 28.5rem;">
-                          <img src="../assets/svg/geometry.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Geometry</h5>
-                            <p class="card-text">The branch of mathematics concerned with the properties and relations of points, lines, surfaces, solids, and higher dimensional analogues.</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                          </div>
-                        </div>
-                        <div class="card border-0 shadow-sm" style="width: 28.5rem;">
-                          <img src="../assets/svg/trignometery.svg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Trigonometry</h5>
-                            <p class="card-text">the branch of mathematics dealing with the relations of the sides and angles of triangles and with the relevant functions of any angles.</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                          </div>
-                        </div>
-                  </div>
-                  
+        </div>
+
+        <!-- mian content -->
+        <div class="row justify-content-center mt-2 ">
+          
+          <div class="content">
+              <div class="mt-4 ">
+                <h2 class="categories">Categories</h2>
               </div>
-              
+              <div class="mb-1 mt-4">
+                  <p class="choose-your-fav m-0 p-0">Choose your favourite category to get in and start your quiz to test your knowledge </p>
+              </div>
           </div>
+
+          <div class="d-flex justify-content-center flex-wrap gap-5 mt-2 ">
+            
+            <a class="text-decoration-none" href="../html/Question.html">
+              <div class="card border-0 shadow-sm "  >
+                <img src="../assets/svg/pre-calculus.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pre Calculus</h5>
+                  <p class="card-text">The Precalculus course covers complex numbers; composite functions; trigonometric functions; vectors; matrices; conic sections; and probability</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </a>
+              
+              <a class="text-decoration-none" href="../html/Question-2.html">
+                <div class="card border-0 shadow-sm" >
+                  <img src="../assets/svg/calculus.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Calculus</h5>
+                    <p class="card-text">Calculus, originally called infinitesimal calculus or "the calculus of infinitesimals", is the mathematical study of continuous change</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+              </a>
+
+
+              <a class="text-decoration-none" href="../html/Question-wrong-ans.html">
+                <div class="card border-0 shadow-sm">
+                  <img src="../assets/svg/algebra-1.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Algebra</h5>
+                    <p class="card-text">The part of mathematics in which letters and other general symbols are used to represent numbers and quantities in formulae and equations.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+              </a>
+
+
+              <a class="text-decoration-none" href="../html/Question.html">
+                <div class="card border-0 shadow-sm" >
+                  <img src="../assets/svg/algebra-2.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Algebra 2</h5>
+                    <p class="card-text">Algebra 2 is the third math course in high school and will guide you through among other things linear equations, inequalities, graphs, matrices, polynomials and radical expressions.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+              </a>
+
+
+              <a class="text-decoration-none" href="../html/Question-2.html">
+                <div class="card border-0 shadow-sm" >
+                  <img src="../assets/svg/geometry.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Geometry</h5>
+                    <p class="card-text">The branch of mathematics concerned with the properties and relations of points, lines, surfaces, solids, and higher dimensional analogues.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+              </a>
+
+              <a class="text-decoration-none" href="../html/Question-wrong-ans.html">
+                <div class="card border-0 shadow-sm" >
+                  <img src="../assets/svg/trignometery.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Trigonometry</h5>
+                    <p class="card-text">the branch of mathematics dealing with the relations of the sides and angles of triangles and with the relevant functions of any angles.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+
+
       </div>
+          
+
+    </div>
+
+
   </body>
+  <script src="../js/main.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

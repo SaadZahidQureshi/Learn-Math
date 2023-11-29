@@ -13,208 +13,157 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../assets/components/roundSlider-1.6.1/roundSlider-1.6.1/src/roundslider.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Question</title>
+    <title>Question-2</title>
   </head>
   <body>
-    <nav class="navbar shadow-sm d-flex justify-content-between">
-      <div
-        class="d-flex w-100 justify-content-between align-items-center ps-5 pe-5"
-      >
-        <div class="">
-          <div class="container">
-            <img
-              src="../assets/svg/google.svg"
-              alt="Logo"
-              style="width: 35px; height: 35px"
-            />
-          </div>
-        </div>
-        <div class="">
-          <ul class="nav align-items-center">
-            <li class="nav-link">
-              <a class="nav-item active" href="">Home</a>
-            </li>
-            <li class="nav-link">
-              <div class="d-flex justify-content-between align-items-center">
-                <a
-                  class="nav-items-fonts-props nav-item text-decoration-none text-dark"
-                  href=""
-                  >My Progress</a
-                >
-                <div class="round-slider ms-1"></div>
-              </div>
-            </li>
-            <li class="nav-link">
-              <a
-                class="nav-items-fonts-props nav-item text-decoration-none text-dark"
-                href=""
-                >Settings</a
-              >
-            </li>
-            <li class="nav-link">
-              <a class="nav-item text-decoration-none popuz-quiz" href=""
-                >Popup Quiz</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row justify-content-center mt-2">
-        <div class="content rounded ps-0 pe-0">
-          <div>
-            <p class="trignometory">Trignometory</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row bg-light w-100 slider-height border m-0 position-relative">
-      <div
-        class="slider d-flex justify-content-center align-items-center p-0 m-0"
-      >
-        <div class="position-absolute prev-button">
-          <div class="me-2 position-relative">
-            <a href="#" onclick="prevSlide()">
-              <img src="../assets/svg/whole.svg" alt="" />
-              <img
-                class="previous-icon position-absolute"
-                src="../assets/svg/arrow_back_ios_black_24dp 1.svg"
-                alt=""
-              />
-            </a>
-          </div>
-        </div>
-
-
-        <div class=" slider-container" id="slider-container">
-            <ul class="d-flex list-unstyled slider-list m-0 p-2" id="slider-list">
-                <li class="slider-items text-center"><a class="text-decoration-none slider-active" href="">Level 1</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 2</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 3</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 4</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 5</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 6</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 7</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 8</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 9</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 10</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 11</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 12</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 13</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 14</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 15</a></li>
-                <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 16</a></li>
-            </ul>
-            </div>
-
-            <!-- <div class="d-flex justify-content-center align-items-center slider-container">
-                <div class="d-flex p-2 gap-3 slider-list">
-                    <div class="">
-                        <a class="slider-items slider-items-active text-decoration-none" href="">Level 1</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 2</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 3</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 4</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 5</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 6</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 7</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 8</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 9</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 10</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 11</a>
-                      </div>
-                      <div class="">
-                        <a class="slider-items text-decoration-none" href="">Level 12</a>
-                      </div>
-                      <div class="">
-                        <a class=" slider-items text-decoration-none " href="">Level 13</a>
-                        </div>
-                        <div class="">
-                            <a class="slider-items text-decoration-none" href="">Level 14</a>
-                        </div>
-                        <div class="">
-                            <a class="slider-items text-decoration-none" href="">Level 15</a>
-                        </div>
+    <!-- mian container  -->
+    <div class="container-fluid m-0 p-0">
+        <nav class="navbar shadow-sm d-flex justify-content-between">
+            <div
+              class="d-flex w-100 justify-content-between align-items-center ps-5 pe-5"
+            >
+              <div class="">
+                <div class="container">
+                  <img
+                    src="../assets/svg/google.svg"
+                    alt="Logo"
+                    style="width: 35px; height: 35px"
+                  />
                 </div>
-              </div> -->
-       
-
-        <div class="position-absolute next-button">
-          <div class="ms-2 position-relative">
-            <a href="#" onclick="nextSlide()">
-              <img src="../assets/svg/whole.svg" alt="" />
-              <img
-                class="next-icon position-absolute"
-                src="../assets/svg/arrow_next_ios_black_24dp 1.png"
-                alt=""
-              />
-            </a>
+              </div>
+              <div class="">
+                <ul class="nav align-items-center">
+                  <li class="nav-link">
+                    <a class="nav-item active" href="../html/Home.html">Home</a>
+                  </li>
+                  <li class="nav-link">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a
+                        class="nav-items-fonts-props nav-item text-decoration-none text-dark"
+                        href=""
+                        >My Progress</a
+                      >
+                      <div class="round-slider ms-1"></div>
+                    </div>
+                  </li>
+                  <li class="nav-link">
+                    <a
+                      class="nav-items-fonts-props nav-item text-decoration-none text-dark"
+                      href="../html/Profile-Setting.html"
+                      >Settings</a
+                    >
+                  </li>
+                  <li class="nav-link">
+                    <a class="nav-item text-decoration-none popuz-quiz" href=""
+                      >Popup Quiz</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- main heading -->
+          <div class="container-fluid ">
+            <div class="row justify-content-center mt-4 mb-2">
+              <div class="content m-0 p-0">
+                <div>
+                  <h2 class="trignometory">Trignometory</h2>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="container-fluid">
-      <div class="row justify-content-center mt-2"></div>
-
-      <div class="row justify-content-center">
-        <div class="content rounded ps-0 pe-0">
-          <div class="d-flex gap-2 mt-1">
-            <div class="row w-100">
-              <div class="col-9">
-                <div class="">
-                  <div class="row">
-                    <div class="col">
-                      <div>
-                        <p class="mark-the-one">
-                          Mark the one option which you think is the correct
-                          answer
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <div class="d-flex gap-1">
-                        <div class="position-relative">
-                          <img src="../assets/svg/Subtract.svg" alt="" />
-                          <p class="ten position-absolute">00</p>
-                        </div>
-                        <div class="position-relative">
-                          <img src="../assets/svg/Subtract.svg" alt="" />
-                          <p class="ten position-absolute">00</p>
-                        </div>
-                        <div class="position-relative">
-                          <img src="../assets/svg/Subtract.svg" alt="" />
-                          <p class="ten position-absolute">10</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <!-- slider container here  -->
+          <div class="row container-fluid justify-content-center align-items-center m-0 p-2 bg-light">
+              <div class="col-1 d-flex justify-content-start ">
                   <div class="">
-                    <p class="question-no-1">Question no 1.</p>
+                      <div class="d-flex justify-content-center align-items-center">
+                          <a class="" href="#" onclick="prevSlide()">
+                              <img src="../assets/svg/previous-arrow.svg" alt="">
+                          </a>
+                      </div>
                   </div>
-                  <pre class="a-article">
+              </div>
+              <div class="col-10">
+                <div class="row justify-content-center align-items-center">
+                    <div class="m-0 p-0 w-100 overflow-hidden" id="slider-container">
+                        <ul class="d-flex  list-unstyled slider-list m-0 p-2" id="slider-list">
+                            <li class="slider-items text-center"><a class="text-decoration-none slider-active" href="">Level 1</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 2</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 3</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 4</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 5</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 6</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 7</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 8</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 9</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 10</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 11</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 12</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 13</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 14</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 15</a></li>
+                            <li class="slider-items text-center"><a class="text-decoration-none" href="">Level 16</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="col-1 d-flex justify-content-end">
+                  <div class="">
+                      <div class="d-flex justify-content-center align-items-center">
+                          <a class="" href="#" onclick="nextSlide()">
+                              <img src="../assets/svg/next-arrow.svg" alt="">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- main content -->
+
+          <div class="container-fluid ">
+            <div class="row justify-content-center mt-2 ">
+              <div class="content m-0 p-0 ">
+                <div class="row m-0 p-0">
+                    <div class="col-9 ">
+                        <div class="row mt-1">
+                            <div class="col-9  m-0 p-0">
+                                <div class="">
+                                    <p class="mark-the-one m-0 p-0">
+                                        Mark the one option which you think is the correct
+                                        answer
+                                      </p>
+                                </div>
+                            </div>
+                            <div class="col-3 ">
+                                <div class="d-flex justify-content-end gap-1">
+                                    <div class=" position-relative">
+                                        <img src="../assets/svg/Subtract.svg" alt="">
+                                        <p class="ten position-absolute" id="hour" >00</p>
+                                    </div>
+                                    <div class="position-relative">
+                                        <img src="../assets/svg/Subtract.svg" alt="">
+                                        <p class="ten position-absolute" id="minut" >00</p>
+                                    </div>
+                                    <div class="position-relative">
+                                        <img src="../assets/svg/Subtract.svg" alt="">
+                                        <p class="ten position-absolute" id="second">00</p>
+                                    </div>
+                                </div>
+
+                                <div id="time-counter-container"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col  m-0 p-0">
+                                <!-- Question no 1. -->
+                                <div class="">
+                                    <p class="question-no-1">Question no 1.</p>
+                                </div>
+                                <!-- Actual question body -->
+                                <div class="">
+                                    <pre class="a-article">
 A particle is moving along a line. Its displacement (in meters) after thours is:
 s(t)=
 –
@@ -222,59 +171,17 @@ s(t)=
 Find the average velocity over the interval [7,16].
 Write your answer as an integer, fraction, or decimal rounded to the nearest tenth. Simplify any fractions.
 metersperhour
-</pre
-                  >
-                </div>
-
-                <div class="row">
-                  <div class="col">
-                    <div class="mt-2">
-                      <a
-                        class="option-selected options d-flex justify-content-start align-items-center text-decoration-none"
-                        href=""
-                        ><p class="first-p p-0 m-0">(A)</p>
-                        <p class="last-p m-0 ps-1">6.5 meters per hour</p></a
-                      >
+                                      </pre>
+                                </div>
+                                <!-- Question image  -->
+                                <!-- <div class="">
+                                    <img class="graph-border" src="../assets/svg/graph-qs.svg" alt="">
+                                </div> -->
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="mt-2">
-                      <a
-                        class="options d-flex justify-content-start align-items-center text-decoration-none"
-                        href=""
-                        ><p class="first-p p-0 m-0">(B)</p>
-                        <p class="last-p m-0 ps-1">3 meters per hour</p></a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="mt-2">
-                      <a
-                        class="options d-flex justify-content-start align-items-center text-decoration-none"
-                        href=""
-                        ><p class="first-p p-0 m-0">(C)</p>
-                        <p class="last-p m-0 ps-1">3.54 meters per hour</p></a
-                      >
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="mt-2">
-                      <a
-                        class="options d-flex justify-content-start align-items-center text-decoration-none"
-                        href=""
-                        ><p class="first-p p-0 m-0">(D)</p>
-                        <p class="last-p m-0 ps-1">None of these</p></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div
-                  class="d-flex justify-content-around align-items-center cotent-container-answered p-2"
-                >
+                    <div class="col-3 ">
+                        <div class="d-flex justify-content-around align-items-center cotent-container-answered p-2">
                   <div class="">
                     <img
                       src="../assets/svg/answered-qs.svg"
@@ -293,56 +200,108 @@ metersperhour
                       </div>
                     </div>
                   </div>
+                        </div>
+
+                        <div
+                        class="d-flex justify-content-around align-items-center cotent-container-correct p-2 mt-2"
+                        >
+                        <div class="">
+                            <img
+                            src="../assets/svg/correct-ans.svg"
+                            alt="answered-qs"
+                            />
+                        </div>
+                        <div class="">
+                            <div
+                            class="d-flex flex-column align-items-center justify-content-center"
+                            >
+                            <div>
+                                <p class="answered-qs p-0 m-0">Correct Questions</p>
+                            </div>
+                            <div>
+                                <p class="answered-qs p-0 m-0">0/10</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div
+                        class="d-flex justify-content-around align-items-center cotent-container-wrong p-2 mt-2"
+                        >
+                        <div class="">
+                            <img src="../assets/svg/wrong-ans.svg" alt="answered-qs" />
+                        </div>
+                        <div class="">
+                            <div
+                            class="d-flex flex-column align-items-center justify-content-center "
+                            >
+                            <div>
+                                <p class="answered-qs p-0 m-0">Wrong Questions</p>
+                            </div>
+                            <div>
+                                <p class="answered-qs p-0 m-0">0/10</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mcqs options -->
+                <div class="row m-0 p-0">
+                    <div class="col">
+                        <div class="row  w-75">
+                            <div class="col">
+                              <div class="mt-2">
+                                <a
+                                  class=" options d-flex justify-content-start align-items-center text-decoration-none"
+                                  href=""
+                                  ><p class="first-p p-0 m-0">(A)</p>
+                                  <p class="last-p m-0 ps-1">6.5 meters per hour</p></a
+                                >
+                              </div>
+                            </div>
+                            <div class="col ">
+                              <div class="mt-2">
+                                <a
+                                  class="options d-flex justify-content-start align-items-center text-decoration-none"
+                                  href=""
+                                  ><p class="first-p p-0 m-0">(B)</p>
+                                  <p class="last-p m-0 ps-1">3 meters per hour</p></a
+                                >
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row  w-75">
+                            <div class="col ">
+                              <div class="mt-2">
+                                <a
+                                  class="option-selected options d-flex justify-content-start align-items-center text-decoration-none"
+                                  href=""
+                                  ><p class="first-p p-0 m-0">(C)</p>
+                                  <p class="last-p m-0 ps-1">3.54 meters per hour</p></a>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="mt-2">
+                                <a
+                                  class="options d-flex justify-content-start align-items-center text-decoration-none"
+                                  href=""
+                                  ><p class="first-p p-0 m-0">(D)</p>
+                                  <p class="last-p m-0 ps-1">None of these</p></a
+                                >
+                              </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div
-                  class="d-flex justify-content-around align-items-center cotent-container-correct p-2 mt-2"
-                >
-                  <div class="">
-                    <img
-                      src="../assets/svg/correct-ans.svg"
-                      alt="answered-qs"
-                    />
-                  </div>
-                  <div class="">
-                    <div
-                      class="d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <div>
-                        <p class="answered-qs p-0 m-0">Correct Questions</p>
-                      </div>
-                      <div>
-                        <p class="answered-qs p-0 m-0">0/10</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div
-                  class="d-flex justify-content-around align-items-center cotent-container-wrong p-2 mt-2"
-                >
-                  <div class="">
-                    <img src="../assets/svg/wrong-ans.svg" alt="answered-qs" />
-                  </div>
-                  <div class="">
-                    <div
-                      class="d-flex flex-column align-items-center justify-content-center "
-                    >
-                      <div>
-                        <p class="answered-qs p-0 m-0">Wrong Questions</p>
-                      </div>
-                      <div>
-                        <p class="answered-qs p-0 m-0">0/10</p>
-                      </div>
-                    </div>
-                  </div>
+                </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+
+
   </body>
   <script src="../js/main.js"></script>
   <script
