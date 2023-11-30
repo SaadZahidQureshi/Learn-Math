@@ -19,9 +19,7 @@
     </style>
   </head>
   <body>
-<!-- error -->
-<div class="slider-items"></div>
-<!-- error  -->
+
 
     <!-- mian container  -->
     <div class="container-fluid m-0 p-0">
@@ -235,7 +233,7 @@ metersperhour
                               <div class="mt-2">
                                 <a
                                   class=" options d-flex justify-content-start align-items-center text-decoration-none m-0 p-0"
-      #                            href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-3"
+      #                            href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-3" onclick="showYoutube()"
                                   ><p class="first-p p-0 m-0">(C)</p>
                                   <p class="last-p m-0 ps-1">3.54 meters per hour</p></a>
                               </div>
@@ -244,7 +242,7 @@ metersperhour
                               <div class="mt-2">
                                 <a
                                   class="options d-flex justify-content-start align-items-center text-decoration-none m-0 p-0"
-      #                            href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal-2" onclick="hideYoutube()"
+      #                            href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal-2" 
                                   ><p class="first-p p-0 m-0">(D)</p>
                                   <p class="last-p m-0 ps-1">None of these</p></a
                                 >
@@ -255,7 +253,7 @@ metersperhour
                 </div>
 
                 <!-- youtube video -->
-                <div class="row m-0 p-0 " id="youtube-video-container">
+                <div class="row m-0 p-0 d-none" id="youtube-video-container">
                   <div class="row m-0 p-0 ">
                     <div class="m-0 p-0">
                       <div class="mt-4">
@@ -696,7 +694,6 @@ metersperhour
   </body>
 
       <script src="../js/main.js"></script>
-      <script src="../js/slider.js"></script>
       <script src="../js/roundSlider.js"></script>
       <script src="../js/timeCounter.js"></script>
   <script
