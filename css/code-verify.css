@@ -1,0 +1,20 @@
+.main-content{
+    width: 75%;
+}
+
+@media (max-width: 540px) {
+    #column-without-form{
+        display: none !important;
+    }
+    #svg-bottom-right{
+        display: none;
+    }
+    #svg-top-left{
+        display: none ;
+    }
+    .main-content{
+        width: 100%;
+        
+    }
+    
+}

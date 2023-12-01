@@ -10,20 +10,24 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/code-verify.css">
   <title>Code Verify</title>
 </head>
 <body >
 
   <div class="main-container position-relative">
-    <div class="position-relative top-0 start-0 w-25">
-      <img class="position-absolute w-50" src="../assets/svg/varification-code-page-top-left-svg.svg" alt="svg-top-left">
-  </div>
-    <div class="position-absolute bottom-0 end-0 ">
-        <img src="../assets/svg/varification-code-page-bottom-right-svg.svg" alt="bottom-right-svg">
-    </div>
+    
+
+      <div class="position-relative top-0 start-0 w-25" id="svg-top-left">
+        <img class="position-absolute w-50" src="../assets/svg/varification-code-page-top-left-svg.svg" alt="svg-top-left">
+      </div>
+      <div class="position-absolute bottom-0 end-0 " id="svg-bottom-right">
+          <img src="../assets/svg/varification-code-page-bottom-right-svg.svg" alt="bottom-right-svg">
+      </div>
+
     
     <div class="row container-fluid m-0 p-0 ">
-        <div class="col d-flex align-items-center ">
+        <div class="col d-flex align-items-center " id="column-without-form">
           <div class="">
             
     
@@ -35,10 +39,10 @@
         </div>
         <div class="col d-flex justify-content-center align-items-center  position-relative">
     
-          <div class="w-75 pt-1 ">
+          <div class="main-content pt-5 mt-5 ">
             <div class="">
                 <div class="text-center">
-                  <h1 class="email-varification-heading">Enter Verification Code</h1>
+                  <h1 class="varification-heading">Enter Verification Code</h1>
                 </div>
             
                 <div class="">

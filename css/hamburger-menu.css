@@ -1,0 +1,9 @@
+.ham-burger-menu{
+    height: 5vh;
+    display: none;
+}
+@media (max-width: 540px) {
+    .ham-burger-menu{
+        display: flex;
+    }
+}

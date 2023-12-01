@@ -13,8 +13,11 @@
     width: 75%;
 }
 @media (max-width: 540px) {
-    div[class = 'col background-svg d-flex align-items-center']{
+    div[id = 'column-without-form']{
         display: none !important;
+    }
+    .svg-top-left{
+        display: block !important;
     }
     .main-content{
         width: 100%;

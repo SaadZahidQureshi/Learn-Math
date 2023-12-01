@@ -121,8 +121,22 @@ body{
     color: #743FCB;
   }
 
-  /* code verify page style */
-
+  /*email code verify page style */
+  .varification-heading{
+    color: #743FCB;
+    font-family: 'Roboto';
+    font-weight: 700;
+  }
+  .varification-message{
+    color: #232740;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+  }
+  
 .main-container{
     height: 100vh;
     width: 100%;
@@ -159,227 +173,10 @@ body{
     font-weight: 400;
     line-height: normal;
 }
-.profile-settings{
-    color: #743FCB;
-    font-family: 'Roboto';
-    font-weight: 700;
-}
-.public-profile{
-    color: #743FCB;
-    font-family: 'Roboto';
-    font-weight: 400;;
-}
-.change-pic{
-    display: inline-flex;
-    padding: 6px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: #743FCB;
-    color: #FFF;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.delete-pic{
-    display: inline-flex;
-    padding: 4px 9px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    border: 1px solid #743FCB;
-    background: #FFF;
-    color: #743FCB;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.reset-password{
-    color: #743FCB;
-    font-family: 'Roboto';
-    font-weight: 400;
-}
-.follow-the-following{
-    color: #232740;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.row label{
-    color: #232740;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.save-changes{
-    width: 500px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    background: #743FCB;
-    color: #FFF;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-/* home page style  */
-
-.banner-container{
-    height: 27vh;
-}
-.banner{
-    background-image: url(../assets/svg/banner-img.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.grow-your-skill{
-    color: #FFF;
-    font-weight: 700;
-
-}
-.banner-img-1{
-    position: absolute;
-    top: 0;
-    left: 15px;
-}
-.millions-of{
-    color: #FFF;
-    font-weight: 400;
-}
-.lets-get-started{
-    display: inline-flex;
-    padding: 8px 32px 8px 33px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: #FFF;
-    color: #232740;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.categories{
-    color: #743FCB;
-    font-family: 'Roboto';
-    font-weight: 700;
-}
-.content{
-    width: 92%;
-}
-
-.choose-your-fav{
-    color: #232740;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-}
-
-.card{
-    width: 26.3rem;
-    cursor: pointer;
-}
-.card-title{
-    color: #232740;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.card-text{
-    color: #232740;
-    font-family: 'Roboto';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
 /* Question page style */
 
-.round-slider{
-    width: 50px ;
-    height: 50px;
-}
-.trignometory{
-    color: #743FCB;
-    font-family: 'Roboto';
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.slider-height{
-    height: 8vh;
-}
-.slider-list{
-    display: flex;
-    transition: transform 0.5s ease; 
-}
 
-.slider-container{
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.slider-items{
-    width: 10%; /* Set the width of each item */
-    flex-shrink: 0;
-    padding: 5px;
-}
-.slider-items { 
-    padding: 5px 17px;
-    border-radius: 50px;
-    color: #C4C4C4;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.slider-active{
-    color: white !important;
-    background: #743FCB;
-    flex-shrink: 0;
-}
-
-.prev-button{
-    top: 6px;
-    left: 20px;
-}
-.next-button{
-    top: 6px;
-    right: 20px;
-}
-.next, .previous{
-    width: 42px;
-    height: 42px;
-    flex-shrink: 0;
-}
-.previous-icon{
-    top: 10px;
-    left: 8px;
-}
-.next-icon{
-    top: 10px;
-    left: 10px;
-}
 .mark-the-one{
     color: #414040;
     font-family: 'Roboto';
