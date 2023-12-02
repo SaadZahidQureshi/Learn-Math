@@ -126,7 +126,9 @@ body{
     color: #743FCB;
     font-family: 'Roboto';
     font-weight: 700;
-  }
+ 
+
+}
   .varification-message{
     color: #232740;
     font-family: 'Roboto';
@@ -177,73 +179,7 @@ body{
 /* Question page style */
 
 
-.mark-the-one{
-    color: #414040;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.question-no-1{
-    color: #232740;
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.a-article{
-    color: #414040;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.ten{
-    color: white;
-    font-family: 'Roboto';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    top: 5px;
-    left: 7px;
-}
 
-.options{
-    width: 250px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    color: black;
-    padding: 10px;
-}
-.options > .first-p{
-    font-family: 'Roboto';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.options > .last-p{
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.option-selected{
-    white-space: inherit;
-
-    padding: 10px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #5AA139;
-    color: white;
-}
 
 .option-selected-wrong{
     white-space: inherit;
@@ -277,18 +213,9 @@ body{
     border-radius: 5px;
     background: #FEE;
 }
-.answered-qs{
-    color: #232740;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
+
 /* question-2 page style */
-.graph-border{
-    border: 5px solid lightskyblue;
-}
+
 .sorry-your-answer{
     color: #F14336;
     font-family: Roboto;
