@@ -181,72 +181,10 @@ body{
 
 
 
-.option-selected-wrong{
-    white-space: inherit;
-    width: 230px;
-    padding: 10px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #F14336;
-    color: white;
-}
 
-.cotent-container-answered{
-    border-radius: 5px;
-    border: 1px solid #E9AC06;
-    background: #FFF;
-}
-.cotent-container-correct{
-    border-radius: 5px;
-    border: 1px solid #32A24A;
-    background: #FFF;
-}
-.cotent-container-wrong{
-    border-radius: 5px;
-    border: 1px solid #F14336;
-    background: #FFF;
-}
-
-.cotent-container-wrong-message{
-    height: 115px;
-    border-radius: 5px;
-    background: #FEE;
-}
 
 /* question-2 page style */
 
-.sorry-your-answer{
-    color: #F14336;
-    font-family: Roboto;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.watch-video{
-    font-family: Roboto;
-    font-weight: 400;
-}
-.embaded-video{
-    height: 50vh;
-    width: 100%; 
-}
-.re-attempt-or-skip{
-    display: inline-flex;
-    padding: 8px 26px 8px 27px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: #743FCB;
-    border-radius: 5px;
-    border: 1px solid #743FCB;
-
-}
-
-.message-end{
-    background: rgba(255, 241, 199, 0.84);
-}
 
 
 /* popup quiz page style */
@@ -261,22 +199,6 @@ body{
     line-height: normal;
 }
 
-.youtube-video__head{
-    color: #232740;
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.youtube-video__description{
-    color: #232740;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
 .modal-head{
     color: #743FCB;
