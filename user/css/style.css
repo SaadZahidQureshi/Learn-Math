@@ -161,44 +161,6 @@ body{
     font-weight: 400;
     line-height: normal;
 }
-.popuz-quiz{
-    display: inline-flex;
-    padding: 8px 27px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    border: 1px solid #743FCB;
-    color: #743FCB;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/* Question page style */
-
-
-
-
-
-
-/* question-2 page style */
-
-
-
-/* popup quiz page style */
-
-
-.popup-quiz-title{
-    color: #743FCB;
-    font-family: Roboto;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
 
 .modal-head{
     color: #743FCB;
@@ -251,5 +213,17 @@ body{
     line-height: normal;
     border: 1px solid #743FCB;
 }
-
-
+.popuz-quiz-btn{
+    display: inline-flex;
+    padding: 8px 27px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #743FCB;
+    color: #743FCB;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

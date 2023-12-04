@@ -286,14 +286,19 @@
     line-height: normal;
 }
 
+.popup-quiz-title{
+    color: #743FCB;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 
 @media (max-width: 540px) {
     .question-category{
         font-size: 22px;
-    }
-    .container-fluid > nav{
-        display: none !important;
     }
     .slider-items{
         width: 25%;

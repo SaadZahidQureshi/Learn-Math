@@ -1,7 +1,7 @@
 const sliderList = document.getElementById('slider-list');
 const sliderItems = document.querySelectorAll('.slider-items');
 const itemWidth = sliderItems[0].offsetWidth;
-console.log(itemWidth)
+// console.log(itemWidth)
 const totalItems = sliderItems.length;
 let currentIndex = 0;
 let itemsDisplayed = 10;

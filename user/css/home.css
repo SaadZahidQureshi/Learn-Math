@@ -2,10 +2,7 @@
 
 
 
-.ham-burger-menu{
-    height: 5vh;
-    display: none;
-}
+
 .main-container__width{
     width: 92%;
 }
@@ -21,6 +18,13 @@
 }
 .banner__background-color{
     background-color: #743FCB;
+}
+
+.banner__background-img{
+    background-image: url(../assets/svg/banner-background-svg.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px), right;
+    background-size: contain;
 }
 .banner_heading{
     color: #FFF;
@@ -98,16 +102,7 @@
 }
 
 @media (max-width: 540px) {
-    .container-fluid > nav{
-        display: none !important;
-    }
-    .ham-burger-menu{
-        display: flex;
-    }
-    .content{
-        border: 1px solid red;
-        width: 100%;
-    }
+
     .banner_heading{
         font-size: 18px;
     }
@@ -133,6 +128,9 @@
     }
     .card-text{
         font-size: 12px;
+    }
+    .banner__background-img{
+        background-position: bottom right;
     }
 
     

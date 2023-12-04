@@ -1,0 +1,16 @@
+.main-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.login-top-left-svg{
+    background-image: url(../assets/svgs/admin-login-left-top-svg.svg);
+    background-repeat: no-repeat;
+    
+
+}
+
+.content{
+    width: 100%;
+    height: 60vh;
+}
