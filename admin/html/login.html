@@ -10,7 +10,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/login.css">
-  <title>Login</title>
+    <link rel="stylesheet" href="../css/common.css">
+  <title>Admin Login</title>
 
   <style>
     
@@ -20,74 +21,71 @@
 <body>
 
     <div class="row m-0 p-0">
-        <div class="col login-top-left-svg border border-dark">
+        <div class="col login-top-left-svg ">
             <div class="main-container  d-flex justify-content-center align-items-center">
                 
-                <div class="content border border-dark">
+                <div class="">
                     <img src="../assets/svgs/admin-login-left-side-svg.svg" alt="">
                 </div>
 
             </div>
         </div>
-        <div class="col border border-dark">
+        <div class="col ">
             <div class="main-container d-flex justify-content-center align-items-center ">
 
-                <div class=" content d-flex flex-column justify-content-center align-items-center border border-dark">
-                    <div class="text-center pt-4">
-                        <h2 class="sign-up">Welcome</h2>
-                    </div>
-                    <form action="../html/Home.html">
-                    <div class="row">
-                      <div class="col">
-                        <div class="text-center ">
-                          <img class="profile-img" src="../assets/svgs/profile-img-svg.svg" alt="profile-img" />
-                        </div> 
-                      </div>
-                    </div>
-            
-                    <div class="row">
-                      <div class="col">
-                        <div class="mb-1 mt-3">
-                          <p class="want-to-be-part p-0 m-0">Login to your account</p>
+                <div class=" content d-flex flex-column justify-content-center ">
+                  
+                  <form action="../html/Home.html">
+                      <div class="text-center pt-4">
+                            <h2 class="sign-up">Welcome</h2>
+                        </div>
+                      
+                        <div class="row">
+                          <div class="col">
+                            <div class="text-center ">
+                              <img class="profile-img" src="../assets/svgs/profile-img-svg.svg" alt="profile-img" />
+                            </div> 
+                          </div>
+                        </div>
+                
+                        <div class="row">
+                          <div class="col">
+                            <div class="mb-1 mt-3">
+                              <p class="want-to-be-part p-0 m-0">Login to your account</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                      <div class="row">
+                        <div class="col">
+                          <div class="position-relative mt-2 pb-0">
+                            <input class="input-control" type="email" name="email" id="input-email" placeholder="Email">
+                            <img class="input-svg bit-wide position-absolute" src="../assets/svgs/email-svg.svg" alt="email-icon">
+                          </div>
                         </div>
                       </div>
-                    </div>
-            
-                  <div class="row">
-                    <div class="col">
-                      <div class="position-relative mt-2 pb-0">
-                        <input class="input-control" type="email" name="email" id="input-email" placeholder="Email">
-                        <img class="input-svg bit-wide position-absolute" src="../assets/svg/email.svg" alt="email-icon">
+                
+                      <div class="row">
+                        <div class="col">
+                          <div class="position-relative mt-3 pb-0">
+                            <input class="input-control" type="password" name="password" id="input-password" placeholder="Password">
+                            <img class="input-svg bit-wide position-absolute" src="../assets/svgs/password-svg.svg" alt="password-icon">
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-            
-                  <div class="row">
-                    <div class="col">
-                      <div class="position-relative mt-3 pb-0">
-                        <input class="input-control" type="password" name="password" id="input-password" placeholder="Password">
-                        <img class="input-svg bit-wide position-absolute" src="../assets/svg/password.svg" alt="password-icon">
+                
+                      <div class="row">
+                        <div class="col">
+                          <div class=" mt-3">
+                            <input class="submit-input-control" type="submit" name="login-btn" id="submit-btn" value="Login">
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-            
-                  <div class="row">
-                    <div class="col">
-                      <div class="position-relative mt-1 forgot-password text-end pb-0">
-                        <a class="text-decoration-none" href="../html/Reset-Password.html"><p>Forgot Password ?</p></a>
-                      </div>
-                    </div>
-                  </div>
-            
-                  <div class="row">
-                    <div class="col">
-                      <div class=" mt-3">
-                        <input class="submit-input-control" type="submit" name="login-btn" id="submit-btn" value="Login">
-                      </div>
-                    </div>
-                  </div>
-            
+
+                  </form>
+
                 </div>
+
             </div>
         </div>
     </div>

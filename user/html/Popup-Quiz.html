@@ -32,7 +32,7 @@
       </div>
       
       <!-- navbar container -->
-      <nav class="navbar  d-flex justify-content-between nav-sm-d-none nav-slid-sm" >
+      <nav class="navbar shadow-sm  d-flex justify-content-between nav-sm-d-none nav-slid-sm" >
           <div
             class="d-flex justify-content-start justify-content-sm-between  w-100 align-items-center p-0 m-0 pe-sm-5 ps-sm-5"
           >
@@ -86,18 +86,42 @@
         <div class="m-0 p-0 d-flex justify-content-center">
          <div class="question-container__width p-0 m-0">
            
-          <div class="row m-0 p-0">
+          <div class="row m-0 p-0 categories-lg-hide-sm-show">
             <div class="mt-4 p-0">
               <h2 class="question-category ">Popup Quiz</h2>
             </div>
            </div>
 
 
-          <div class="row m-0 p-0 mt-3 ">
+          <div class="row m-0 p-0 mt-3 mt-sm-5 ">
 
-            <div class="col-sm-9 col-order-sm-reverse-2">
+            <div class="col-sm-9 col-order-sm-reverse-2 ">
               
               <!-- top message & time counter  container-->
+
+              <div class="row p-0">
+                <div class="col p-0 categories-sm-hide">
+                  <div class=" p-0">
+                    <h2 class="question-category m-0 p-0">Popup Quiz</h2>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-order-sm-reverse-1 m-0 p-0 d-flex justify-content-center align-items-center">
+                  <div class="d-flex justify-content-end gap-1  ">
+                      <div class=" position-relative time-counter-container gap-sm">
+                          <img src="../assets/svg/Subtract.svg" alt="">
+                          <p class="time-counter__text position-absolute" id="hour" >00</p>
+                      </div>
+                      <div class="position-relative time-counter-container gap-sm">
+                          <img src="../assets/svg/Subtract.svg" alt="">
+                          <p class="time-counter__text position-absolute" id="minut" >00</p>
+                      </div>
+                      <div class="position-relative time-counter-container gap-sm">
+                          <img src="../assets/svg/Subtract.svg" alt="">
+                          <p class="time-counter__text position-absolute" id="second">00</p>
+                      </div>
+                  </div>
+             </div>
+              </div>
               <div class="row ">
                 <div class="col-sm-9 col-order-sm-reverse-2 p-0 mt-sm ">
                     <div class="">
@@ -107,7 +131,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3 col-order-sm-reverse-1 m-0 p-0 d-flex justify-content-center align-items-center">
+                <div class="col-sm-3 col-order-sm-reverse-1 m-0 p-0 d-flex justify-content-center align-items-center d-none">
                     <div class="d-flex justify-content-end gap-1  ">
                         <div class=" position-relative time-counter-container gap-sm">
                             <img src="../assets/svg/Subtract.svg" alt="">
@@ -157,10 +181,10 @@ metersperhour
             </div>
 
             <!--Side-Result container -->
-            <div class="col-sm-3 col-order-sm-reverse-1 p-0 m-0">
+            <div class="col-sm-3 col-order-sm-reverse-1 p-0 m-0 ">
               <div class="d-flex flex-sm-column side-result-container justify-content-center gap-3">
 
-                  <div class="">
+                  <div class="d-flex justify-content-end">
 
                     <div class="d-flex flex-column flex-sm-row justify-content-around align-items-center cotent-container-answered ">
                       <div class="">
@@ -184,7 +208,7 @@ metersperhour
 
                   </div>
 
-                  <div class="">
+                  <div class="d-flex justify-content-end">
                     <div class="d-flex flex-column flex-sm-row justify-content-around align-items-center cotent-container-correct">
                           <div class="">
                               <img
@@ -208,7 +232,7 @@ metersperhour
                           </div>
                   </div>
 
-                  <div class="">
+                  <div class="d-flex justify-content-end">
                     <div class="d-flex flex-column flex-sm-row justify-content-around align-items-center cotent-container-wrong">
                           <div class="">
                               <img class="side-result__image" src="../assets/svg/wrong-ans.svg" alt="answered-qs" />

@@ -130,7 +130,7 @@
         font-size: 12px;
     }
     .banner__background-img{
-        background-position: bottom right;
+        background-position: calc(100% - 10px) calc(100% - 10px);
     }
 
     
