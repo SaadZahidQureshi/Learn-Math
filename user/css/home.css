@@ -80,10 +80,10 @@
     line-height: normal;
 
 }
-.card{
+/* .card{
     width: 27rem;
     cursor: pointer;
-}
+} */
 .card-title{
     color: #232740;
     font-family: 'Roboto';
@@ -119,10 +119,10 @@
     .categories__desc{
         font-size: 14px;
     }
-    .card{
+    /* .card{
 
         width: 22.3rem;
-    }
+    } */
     .card-title{
         font-size: 16px;
     }
