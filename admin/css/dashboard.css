@@ -1,14 +1,83 @@
 
-
-
-.sidebar-items{
-    margin-top: 10px;
+.sidebar__link-icon{
+    width: 25px;
+    height: 25px;
 }
-.col-height{
+
+.bg-color{
+    background-color: rgba(116, 63, 203, 0.05);
+}
+
+
+.nav-link:hover .sidebar__link-icon path {
+    fill: white;
+}
+.nav-link:hover{
+    background-color: #743FCB;
+}
+
+.active{
+    background-color: #743FCB;
+    color: white;
+}
+.logo-height{
+    height: 10vh;
+}
+.logo-svg{
+    height: 40px;
+    width: 40px;
+}
+.nav-height{
     height: 100vh;
 }
 
-.sidebar__link-icon{
-    width: 50px;
-    height: 50px;
+.dashboard__heading{
+    font-size: 35px;
+    color: #743FCB;
+    font-weight: 700;
+}
+.dashboar-head-container--categories{
+    background-color: #F7A94A;
+    padding: 36px 61px;
+}
+.dashboar-head-container--users{
+    background-color: #F14336;
+    padding: 36px 61px;
+}
+.dashboar-head-container--questions{
+    background-color: #28B446;
+    padding: 36px 61px;
+}
+.dashboar-head-container__title{
+    color: #FFF;
+    font-weight: 600;
+
+}
+.dashboar-head-container__icons{
+    width: 71px;
+    height: 71px;
+}
+.dashboar-head-container__icons path{
+    fill: white;
+}
+.dashboar-head-container__desc{
+    color: #FFF;
+}
+
+.dashboard__roundslider--success{
+    font-size: 20px;
+    font-weight: 700;
+    color: #28B446;
+}
+.dashboard__roundslider--danger{
+    font-size: 20px;
+    font-weight: 700;
+    color: #F14336;
+}
+.line-graph-container-title{
+    line-height: 20px;
+    font-weight: 700;
+}
+#myBarChart{
+    width: 100%;
 }

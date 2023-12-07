@@ -139,7 +139,7 @@
         font-size: 18px;
     }
 }
-@media (max-width : 1600px) {
+@media (max-width : 1536px) {
     .signup-left-heading{
         font-size: 44px;
     }
