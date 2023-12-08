@@ -3,22 +3,23 @@
     width: 25px;
     height: 25px;
 }
+.def-color{
+    fill: #565656;
+}
 
 .bg-color{
     background-color: rgba(116, 63, 203, 0.05);
 }
-
-
-.nav-link:hover .sidebar__link-icon path {
+.nav-link:hover svg{
     fill: white;
 }
 .nav-link:hover{
     background-color: #743FCB;
 }
 
-.active{
+.active {
     background-color: #743FCB;
-    color: white;
+    fill : white;
 }
 .logo-height{
     height: 10vh;
@@ -53,9 +54,10 @@
     font-weight: 600;
 
 }
-.dashboar-head-container__icons{
+.dashboar-head-container__icons {
     width: 71px;
     height: 71px;
+   
 }
 .dashboar-head-container__icons path{
     fill: white;
@@ -78,6 +80,30 @@
     line-height: 20px;
     font-weight: 700;
 }
-#myBarChart{
-    width: 100%;
+.chart-container{
+    height: 30vh;
 }
+#myDonutChart{
+    width: 100% !important;
+    height: 100% !important;
+}
+#myLineChart{
+    width: 100% !important;
+    height: 100% !important;
+}
+#myBarChart{
+    width: 100% !important;
+    height: 100% !important;
+}
+#datepicker{
+    width: 105px;
+}
+.ui-datepicker-calendar {
+    display: none;
+ }
+ .ui-datepicker-month {
+    display: none;
+ }
+ .ui-datepicker-next,.ui-datepicker-prev {
+   display:none;
+ }

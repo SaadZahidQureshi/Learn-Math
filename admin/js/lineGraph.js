@@ -2,7 +2,7 @@ const xValues = ['Jan','Fab','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','No
 const yValues = [20,30,50,30,20,10,10,40,50,60,10];
 
 
-new Chart("myChart", {
+new Chart("myLineChart", {
   type: "line",
   data: {
     labels: xValues,
@@ -18,6 +18,7 @@ new Chart("myChart", {
     legend: {display: false},
     scales: {
       yAxes: [{ticks: {min: 0, max:60}}],
-    }
+    },
+    maintainAspectRatio: false
   }
 });

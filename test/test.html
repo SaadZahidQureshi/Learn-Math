@@ -1,78 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="../css/dashboard.css">
-    <title>Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #calendarContainer {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarContainer = document.getElementById('calendarContainer');
+      var tag = document.getElementById('tag');
+
+      tag.addEventListener('click', function() {
+        if (calendarContainer.style.display === 'block') {
+          calendarContainer.style.display = 'none';
+        } else {
+          calendarContainer.style.display = 'block';
+        }
+      });
+
+      // Close the calendar if a click occurs outside of it
+      document.addEventListener('click', function(event) {
+        if (!calendarContainer.contains(event.target) && event.target !== tag) {
+          calendarContainer.style.display = 'none';
+        }
+      });
+    });
+  </script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row ">
-            <div class="col-1 bg-light col-height p-0">
-                <div class="d-flex flex-column align-items-between">
 
-                    <div class="border border-danger">
-                        <div class="">
-                            <h1>Logo</h1>
-                        </div>
-                    </div>
+  <div>
+    <span id="tag" style="cursor: pointer; text-decoration: underline; color: blue;">Click me to show calendar</span>
+  </div>
 
-                    <div class="border border-danger d-flex flex-column align-items-center col-height">
+  <div id="calendarContainer">
+    <!-- Your calendar content goes here -->
+    <iframe src="https://calendar.google.com/calendar/embed?src=your-calendar-id" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
 
-                        <div class="">
-
-                            <div class="sidebar-items">
-                                <a class="sidebar__link" href=""><img class="sidebar__link-icon" src="../assets/svgs/dashboardd-svg.svg" alt=""></a>
-                            </div>
-    
-                            <div class="sidebar-items">
-                                <a class="sidebar__link" href=""><img class="sidebar__link-icon" src="../assets/svgs/user-svg.svg" alt=""></a>
-                            </div>
-    
-                            <div class="sidebar-items">
-                                <a class="sidebar__link" href=""><img class="sidebar__link-icon" src="../assets/svgs/categories-svg.svg" alt=""></a>
-                            </div>
-    
-                            <div class="sidebar-items">
-                                <a class="sidebar__link" href=""><img class="sidebar__link-icon" src="../assets/svgs/level-svg.svg" alt=""></a>
-                            </div>
-    
-                            <div class="sidebar-items">
-                                <a class="sidebar__link" href=""><img class="sidebar__link-icon" src="../assets/svgs/question-svg.svg" alt=""></a>
-                            </div>
-    
-                            <div class="sidebar-items">
-                                <a class="sidebar__link" href=""><img class="sidebar__link-icon" src="../assets/svgs/categories-svg.svg" alt=""></a>
-                            </div>
-    
-                            <div class="sidebar-items">
-                                <a class="sidebar__link" href=""><img class="sidebar__link-icon" src="../assets/svgs/profile-svg.svg" alt=""></a>
-                            </div>
-    
-                            <div class="sidebar-items">
-                                <a class="sidebar__link" href=""><img class="sidebar__link-icon" src="../assets/svgs/exit-svg.svg" alt=""></a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-11"></div>
-        </div>
-    </div>
 </body>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
 </html>
