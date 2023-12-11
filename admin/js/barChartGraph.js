@@ -1,31 +1,43 @@
-const xValues1 = ["Trignometry", "Calculus", "Integration", "Geometry", "Algebra","Matrix", "Functions" ,"Graphs", "Pre Cal", "Algebra 2", "Trignometry", "Geometry", "Ratios", "Functions", "Integ"];
-const yValues1 = [60000, 70000, 70000, 75000, 80000, 25000, 80000, 75000, 60000, 80000, 80000, 75000, 80000, 100000, 80000];
-// const barColors = ["red", "green","blue","orange","brown"];
-// const labels = Utils.months({count:7})
+// Bar Chart
+const labels = ["Trignometry", "Calculus", "Integration", "Geometry", "Algebra","Matrix", "Functions" ,"Graphs", "Pre Cal", "Algebra 2", "Trignometry", "Geometry", "Ratios", "Functions", "Integ"];
+const values = [60000, 70000, 70000, 75000, 80000, 25000, 80000, 75000, 60000, 80000, 80000, 75000, 80000, 100000, 80000];
 
-// console.log(document.getElementById('myBarChart'))
-new Chart("myBarChart", {
-  type: "bar",
-  labels:xValues1,
-  data: {
-    labels: xValues1,
-    datasets: [{
-      backgroundColor: 'rgba(116, 63, 203, 1)',
-      data: yValues1,
-      barThickness:'12',
-      borderWidth:1,
-      // borderRadius: 15,
-    }]
-  },
+// Bar chart setup 
+const barChartData = {
+  labels: labels,
+  datasets: [{
+    data: values,
+    backgroundColor: 'rgba(116, 63, 203, 1)',
+    barThickness:'12',
+    barThickness: 20,
+    borderRadius: 10
+  }]
+};
+
+// Bar chart config 
+const barChartConfig = {
+  type: 'bar',
+  data: barChartData,
   options: {
-    legend: {display: false},
-    title: {
-      display: true,
+      maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'No. of People vs Categories',
+        align: 'start'
+      },
     },
-    maintainAspectRatio: false,
-  },
-  
-});
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+};
 
-
-
+// Bar chart render
+const myBarChart = new Chart(
+  document.getElementById('myBarChart'),
+  barChartConfig
+);

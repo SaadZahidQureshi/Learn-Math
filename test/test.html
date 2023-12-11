@@ -1,52 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    #calendarContainer {
-      display: none;
-      position: absolute;
-      top: 30px;
-      left: 0;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 10px;
-    }
-  </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var calendarContainer = document.getElementById('calendarContainer');
-      var tag = document.getElementById('tag');
-
-      tag.addEventListener('click', function() {
-        if (calendarContainer.style.display === 'block') {
-          calendarContainer.style.display = 'none';
-        } else {
-          calendarContainer.style.display = 'block';
-        }
+<html>
+  <head>
+    <title>JavaScript Donut Chart</title>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-pie.min.js"></script>
+    <style type="text/css">      
+      html, body, #container { 
+        width: 100%; height: 100%; margin: 0; padding: 0; 
+      } 
+    </style>
+  </head>
+  <body>  
+    <div id="container"></div>
+    <script>
+      anychart.onDocumentReady(function () {  
+        // add the data
+        var data = anychart.data.set([
+          ["Wimbledon", 8],
+          ["Australian Open", 6],
+          ["U.S. Open", 5],
+          ["French Open", 1]
+        ]);
+        // create a pie chart instance with the passed data
+        var chart = anychart
+          .pie(data)
+          // set the inner radius to make a donut chart
+          .innerRadius("55%");
+        // set the chart title
+        chart.title("Grand Slam Titles Won by Roger Federer");
+        // set the container id for the chart
+        chart.container("container");
+        // draw the resulting chart
+        chart.draw();
       });
-
-      // Close the calendar if a click occurs outside of it
-      document.addEventListener('click', function(event) {
-        if (!calendarContainer.contains(event.target) && event.target !== tag) {
-          calendarContainer.style.display = 'none';
-        }
-      });
-    });
-  </script>
-</head>
-<body>
-
-  <div>
-    <span id="tag" style="cursor: pointer; text-decoration: underline; color: blue;">Click me to show calendar</span>
-  </div>
-
-  <div id="calendarContainer">
-    <!-- Your calendar content goes here -->
-    <iframe src="https://calendar.google.com/calendar/embed?src=your-calendar-id" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-  </div>
-
-</body>
+    </script>
+  </body>
 </html>

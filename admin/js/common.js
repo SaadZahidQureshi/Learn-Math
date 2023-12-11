@@ -1,6 +1,6 @@
 var links = document.querySelectorAll('.nav-link')
-console.log(links)
-console.log(typeof(links))
+// console.log(links)
+// console.log(typeof(links))
 
 
 window.addEventListener('onload',function(){
@@ -9,7 +9,7 @@ window.addEventListener('onload',function(){
     })
 })
 
-item
+// item
 links.forEach((item,index)=>{
     item.addEventListener('click', function(){
         links.forEach((element,index)=>{
