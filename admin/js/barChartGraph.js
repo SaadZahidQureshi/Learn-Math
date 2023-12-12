@@ -27,6 +27,9 @@ const barChartConfig = {
         text: 'No. of People vs Categories',
         color:'#3D4857',
         align: 'start',
+        padding:{
+          bottom:25
+        },
         font:{
           size: 16,
           weight: 700,
