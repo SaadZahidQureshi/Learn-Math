@@ -1,7 +1,7 @@
 
 .sidebar__link-icon{
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
 }
 .def-color{
     fill: #565656;
@@ -33,6 +33,10 @@
 .nav-height{
     height: 100vh;
 }
+.padding{
+    padding: 11px 17px;
+}
+
 
 .dashboard__heading{
     font-size: 35px;
@@ -86,10 +90,13 @@
     height: 30vh;
     width: 100%;
     /* width: 30%; */
+    /* border: 1px solid red */
+
 }
 #myDonutChart{
     width: 100% !important;
     height: 100% !important;
+    /* border: 1px solid red */
 }
 #myLineChart{
     width: 100% !important;
@@ -111,3 +118,35 @@
  .ui-datepicker-next,.ui-datepicker-prev {
    display:none;
  }
+
+ .dropdown{
+    display: inline-block;
+}
+.dropbtn{
+    text-decoration: none;
+
+    border: none;
+    background-color: #F2EFF6;
+    color: black;
+}
+.dropdown-content{
+    display: none;
+    width: 124px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 1;
+}
+.dropdown-content li{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 7px 10px;
+    text-align: center;
+}
+.dropdown-content li:hover{
+    background-color:rgba(116, 63, 203, 1);
+    color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}

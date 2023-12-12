@@ -58,16 +58,24 @@ const yValues = [20,30,50,30,20,10,10,40,50,60,10];
             display:true,
             text:'No. of People vs Joined Date',
             align:'start',
+            color:'#3D4857',
+            font:{
+              size: 16,
+              weight: 700,
+              // lineHeight: 20,
+              // family: 'Roboto'
+            },
             
           },
-        },
-        scales: {
-            yAxes: [{ticks: {min: 0, max:60}}],
         },
       }
     };
     // render init block
-    const myChart = new Chart(
-      document.getElementById('myLineChart'),
+
+    const myLineChart = new Chart(
+      document.getElementById("myLineChart"),
       config
     );
+    
+    
+    

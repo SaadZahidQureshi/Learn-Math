@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -48,59 +49,68 @@
     </div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
     <script>
-      //const label = ["Wrong Ans", "Correct Ans"];
-      const values2 = [50, 50];
-      const color = ["#F14336", "#28B446"];
+    // setup 
+    const data = {
+      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+      datasets: [{
+        label: 'green',
+        data: [20, 40, 30, 50, 60, 40, 35],
+        backgroundColor: ['rgba(75, 192, 192, 0.2)'],
+        borderColor: ['rgba(75, 192, 192, 1)'],
+        borderWidth: 1
+      },{
+        label: 'red',
+        data: [10, 20, 30, 40, 50, 60, 70],
+        backgroundColor: ['rgba(255, 26, 104, 0.2)'],
+        borderColor: ['rgba(255, 26, 104, 0.2)'],
+        borderWidth: 1
+      },{
+        label: 'blue',
+        data: [10, 20, 10, 20, 10, 20, 35],
+        backgroundColor: ['rgba(54, 162, 235, 1)'],
+        borderColor: ['rgba(54, 162, 235, 1)'],
+        borderWidth: 1
+      }]
+    };
 
-      total = values2.reduce((accumulator, currentValue) => accumulator + currentValue)
-      label = values2.map(value => Math.round((value / total) * 100) +'%');
-      label[0]= label[0]+' correct ans'
-      label[1]= label[1]+' wrong ans'
-      
-    // Doughnut chart data
-const doughnutData = {
-  labels: label,
-  datasets: [{
-    data: values2,
-    backgroundColor: color,
-  }]
-};
 
-// Doughnut chart config
-const doughnutConfig = {
-  type: 'doughnut',
-  data: doughnutData,
-  options: {
-    maintainAspectRatio: false,
-    plugins: {
-      legend: {
-        labels:{
-          font:{
-            size: 20,
-            weight: 700,
-            family:'Roboto'
-          },
+    
+    // config 
+    const config = {
+      type: 'line',
+      data,
+      options: {
+        plugins:{
+
+          legend:{
+            position:'bottom',
+            labels:{
+              generateLabels:(chart)=>{
+                console.log(chart.data.datasets)
+
+                return chart.data.datasets.map((dataset,index)=>({
+                  text: dataset.label,
+                  fontColor : dataset.backgroundColor,
+                  fillStyle: dataset.borderColor,
+                  strokeStyle: dataset.borderColor
+                }))
+              }
+            }
+          }
         },
-        display: true,
-        position: 'bottom',
-      },
-      title: {
-        display: false,
-        text: 'Answer Distribution',
-        align: 'start',
-      },
-    },
-  }
-};
+        
+      }
+    };
 
-// Doughnut chart render
-const myDoughnutChart = new Chart(
-  document.getElementById('myChart'),
-  doughnutConfig
-);
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
 
-
-
+    // Instantly assign Chart.js version
+    const chartVersion = document.getElementById('chartVersion');
+    chartVersion.innerText = Chart.version;
     </script>
 
   </body>

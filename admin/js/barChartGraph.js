@@ -25,7 +25,14 @@ const barChartConfig = {
       title: {
         display: true,
         text: 'No. of People vs Categories',
-        align: 'start'
+        color:'#3D4857',
+        align: 'start',
+        font:{
+          size: 16,
+          weight: 700,
+          // lineHeight: 20,
+          // family: 'Roboto'
+        },
       },
     },
     scales: {
