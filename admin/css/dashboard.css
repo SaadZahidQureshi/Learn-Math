@@ -1,58 +1,5 @@
 
-.sidebar__link-icon{
-    /* width: 40px;
-    height: 40px; */
-    height: 25px;
-    width: 25px;
-}
-.def-color{
-    fill: #565656;
-}
-.rounded-border{
-    /* border-radius: 18px; */
-    border-radius: 10px;
-}
-.bg-color{
-    background-color: rgba(116, 63, 203, 0.05);
-}
-.bg-sidebar{
-    background-color: #F9F9F9;
-}
-.nav-link{
-    padding: 10px;
-    /* padding: 11px 17px ; */
-    /* border: 1px solid red; */
-}
-.nav-link:hover svg{
-    fill: white;
-}
-.nav-link:hover{
-    background-color: #743FCB;
-}
 
-.active {
-    background-color: #743FCB;
-}
-.active .def-color {
-    fill: white;
-}
-.logo-height{
-    height: 10vh;
-}
-.logo-svg{
-    height: 40px;
-    width: 40px;
-}
-.nav-height{
-    height: 100vh;
-}
-
-
-.dashboard__heading{
-    font-size: 35px;
-    color: #743FCB;
-    font-weight: 700;
-}
 .dashboar-head-container--categories{
     background-color: #F7A94A;
     padding: 36px 61px;
@@ -117,24 +64,20 @@
     height: 100% !important;
 }
 
- .ui-datepicker-next,.ui-datepicker-prev {
-   display:none;
- }
-
  .dropdown{
     display: inline-block;
 }
 .dropbtn{
     text-decoration: none;
-    width: 124px;
+    width: 130px;
     border: none;
     background-color: #F2EFF6;
     color: black;
 }
 .dropdown-content{
     display: none;
-    width: 124px;
-    max-height: 150px; /* Set a maximum height for the dropdown content */
+    width: 130px;
+    max-height: 200px; /* Set a maximum height for the dropdown content */
     overflow-y: auto; /* Add a scrollbar for overflow */
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -147,6 +90,8 @@
     text-decoration: none;
     padding: 7px 10px;
     text-align: center;
+    /* scrollbar-width: none; */
+
 }
 .dropdown-content li:hover{
     background-color:rgba(116, 63, 203, 1);

@@ -13,3 +13,59 @@ body{
     box-sizing: border-box;
     font-family: Roboto;
 }
+
+
+.sidebar__link-icon{
+    width: 40px;
+    height: 40px;
+    /* height: 25px;
+    width: 25px; */
+}
+.def-color{
+    fill: #565656;
+}
+.rounded-border{
+    border-radius: 18px;
+    /* border-radius: 10px; */
+}
+.bg-color{
+    background-color: rgba(116, 63, 203, 0.05);
+}
+.bg-sidebar{
+    background-color: #F9F9F9;
+}
+.nav-link{
+    padding: 17px;
+    /* padding: 11px 17px ; */
+    /* border: 1px solid red; */
+}
+.nav-link:hover svg{
+    fill: white;
+}
+.nav-link:hover{
+    background-color: #743FCB;
+}
+
+.active {
+    background-color: #743FCB;
+}
+.active .def-color {
+    fill: white;
+}
+.logo-height{
+    height: 10vh;
+}
+.logo-svg{
+    height: 40px;
+    width: 40px;
+}
+.nav-height{
+    height: 100vh;
+}
+
+
+.dashboard__heading{
+    font-size: 35px;
+    color: #743FCB;
+    font-weight: 700;
+}
