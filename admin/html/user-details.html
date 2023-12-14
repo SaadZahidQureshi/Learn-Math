@@ -26,14 +26,14 @@
         <div class="row ">
 
             <!-- sidebar -->
-            <div class="col-1 p-0 m-0 ">
-                <div class="d-flex flex-column  align-items-center  h-100 ">
+            <div class="col-1 p-0 m-0  bg-sidebar ">
+                <div class="d-flex flex-column  align-items-center ">
                     <!-- wanna show these two column vertically  -->
-                    <div class="logo-height w-100 d-flex justify-content-center align-items-center bg-sidebar">
+                    <div class="logo-height w-100 d-flex justify-content-center align-items-center">
                         <a class="text-decoration-none text-dark" href="#">Logo</a>
                     </div>
-                    <div class=" w-100 d-flex justify-content-center align-items-center  h-100 bg-sidebar">
-                        <div class="d-flex flex-column gap-4 nav-height">
+                    <div class=" w-100 d-flex justify-content-center">
+                        <div class="d-flex flex-column gap-4 nav-height  margintop-nav">
 
                             <div class="d-flex">
                                 <a class="nav-link rounded-border bg-color " href="../html/dashboard.html" onclick="toggleActive(this)">
@@ -146,57 +146,91 @@
                 </div>
 
                 <div class="row justify-content-center mt-4">
-                  <div class="col-11 shadow-sm rounded-2 d-flex justify-content-center  p-0 ">
-                    <div class="  w-75 p-3">
+                  <div class="col-11 shadow-sm rounded-3 d-flex flex-column align-items-center  p-5 ">
+                    
                             
-                        <div class="row botm__border ">
-                            <div class="col d-flex justify-content-start">
-                                <div class="">
-                                    <div class=""><h3>ID</h3></div>
-                                    <div class=""><h5>001451</h5></div>
+                        <div class="row justify-content-between align-items-center w-90 ">
+                            <div class="col-4 d-flex justify-content-start">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div ><h3 class="user-detail__heading">ID</h3></div>
+                                    <div ><h5 class="user-details__desc">001451</h5></div>
                                 </div>
                             </div>
     
-                            <div class="col d-flex justify-content-center">
-                                <div class="">
-                                    <div class=""><h3>Username</h3></div>
-                                    <div class=""><h5>DarleneRobertson</h5></div>
+                            <div class="col-4 d-flex justify-content-center">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div ><h3 class="user-detail__heading">Username</h3></div>
+                                    <div ><h5 class="user-details__desc">DarleneRobertson</h5></div>
                                 </div>
                             </div>
     
-                            <div class="col d-flex justify-content-end">
-                                <div class="">
-                                    <div class=""><h3>Email</h3></div>
-                                    <div class=""><h5>Darlane_rob23@gmail.com</h5></div>
+                            <div class="col-4 d-flex justify-content-end">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div ><h3 class="user-detail__heading">Email</h3></div>
+                                    <div ><h5 class="user-details__desc">Darlane_rob23@gmail.com</h5></div>
                                 </div>
                             </div>
                         </div>
+                        <hr class="w-90 color-bg">
                         
-                        <div class="row botm__border  mt-3">
-                            <div class="col d-flex justify-content-start">
-                                <div class="">
-                                    <div class=""><h3>ID</h3></div>
-                                    <div class=""><h5>001451</h5></div>
+                        <div class="row  justify-content-between w-90 ">
+                            <div class="col-4 d-flex justify-content-start">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div ><h3 class="user-detail__heading">Category</h3></div>
+                                    <div ><h5 class="user-details__desc">001451</h5></div>
                                 </div>
                             </div>
     
-                            <div class="col d-flex justify-content-center">
-                                <div class="">
-                                    <div class=""><h3>Username</h3></div>
-                                    <div class=""><h5>DarleneRobertson</h5></div>
+                            <div class="col-4 d-flex justify-content-center">
+                                <div class="d-flex flex-column align-items-center  ">
+                                    <div ><h3 class="user-detail__heading">Quesions Attempted</h3></div>
+                                    <div ><h5 class="user-details__desc">39</h5></div>
                                 </div>
                             </div>
     
-                            <div class="col d-flex justify-content-end">
-                                <div class="">
-                                    <div class=""><h3>Email</h3></div>
-                                    <div class=""><h5>Darlane_rob23@gmail.com</h5></div>
+                            <div class="col-4 d-flex justify-content-end">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div ><h3 class="user-detail__heading">No. of Levels</h3></div>
+                                    <div ><h5 class="user-details__desc">33</h5></div>
                                 </div>
                             </div>
                         </div>
+                        <hr class="w-90 color-bg">
 
+                        <div class="row  justify-content-start w-90 ">
+                            <div class="col-4 d-flex justify-content-start">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div ><h3 class="user-detail__heading">ID</h3></div>
+                                    <div ><h5 class="user-details__desc">001451</h5></div>
+                                </div>
+                            </div>
+    
+                            <div class="col-4 d-flex justify-content-center">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div ><h3 class="user-detail__heading">Username</h3></div>
+                                    <div ><h5 class="user-details__desc">DarleneRobertson</h5></div>
+                                </div>
+                            </div>
+    
+                            <!-- <div class="col-3">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div ><h3 class="user-detail__heading">Email</h3></div>
+                                    <div class=""><h5>Darlane_rob23@gmail.com</h5></div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <hr class="w-90 color-bg">
+
+
+                        <div class="row w-100">
+                            <div class="col d-flex justify-content-center">
+                              <div class="mt-4 w-50">
+                                <a class="submit-input-control d-flex justify-content-center align-items-center text-decoration-none user-delete" href="#" type="submit" name="login-btn" id="submit-btn" data-bs-toggle="modal" data-bs-target="#user-successfully-delet-modal">Delete</a>
+                              </div>
+                            </div>
+                          </div>
                            
-                    </div>
+                  
                   </div>
                 </div>
 
@@ -207,6 +241,43 @@
         </div>
     </div>
 </body>
+
+ <!-- Modal user successfully delete-->
+ <div class="modal fade"  id="user-successfully-delet-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="width: 80%;">
+      <div class="modal-content ps-4 pe-4">
+        <div class="modal-body">
+
+            <div class="row p-0">
+                <div class="col d-flex justify-content-end p-0">
+                    <a data-bs-dismiss="modal" href=""><img src="../assets/svgs/cancel.svg" alt=""></a>
+                </div>
+            </div>
+          <div class=" d-flex flex-column align-items-center justify-content-center">
+            <div class="">
+                <img src="../assets/svgs/delete svg.svg" alt="">
+            </div>
+            <!-- <div class=""><h1 class="modal-marks">Want to Delete?</h1></div> -->
+            
+            <div class="d-flex justify-content-center align-items-center">
+                
+                <div class="mt-2">
+                    <h1 class="modal-head m-0 p-0">Want to Delete?</h1>
+                </div>
+            
+              </div>
+
+            <div class="text-center mt-3 pt-2"><p class="modal-message m-0 p-0">Are you sure want to delete this user? You will not able to recover this user again.</p></div>
+
+            <div class="mt-3 pt-1">
+                  <button type="button" class="modal-button border-0 text-light" data-bs-dismiss="modal">Delete</button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
 
 <script src="../js/common.js"></script>
 <script

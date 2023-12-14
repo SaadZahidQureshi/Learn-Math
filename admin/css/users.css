@@ -1,14 +1,23 @@
 
 
+.heading-container-height{
+    height: 8%;
+}
+
 
 .user-title{
     color: #743FCB;
 }
-.user-title-desc{
-    
-}
+
 .margintop{
     margin-top: 30px;
+}
+
+.nav-height{
+    height: 100vh;
+}
+.margintop-nav{
+    margin: 150px;
 }
 .searchbar-height{
     height: 50px;
@@ -45,15 +54,18 @@ input[type="search"]:focus{
 }
 
 .tr{
-    text-align: center;
-    font-size: 14px;
+
 }
 td{
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+
 }
 
 .status{
+    width: 90px;
+    height: 30px;
     padding: 5px;
     border-radius: 5px;
     font-size: 14px;
@@ -72,10 +84,13 @@ td{
     background-color: rgba(216, 53, 32, 0.10);
     color: rgba(216, 53, 32, 1);
 }
+
 .action-btns{
-    height: 40px;
-    width: 40px;
-    padding: 7px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
     border-radius: 5px;
 }
 .action-btns-view{
@@ -88,7 +103,7 @@ td{
 
 
 a[class='page-link']{
-    font-size: 5px;
+    font-size: 8px;
     color: #743FCB !important;
     border: none !important;
 }
@@ -99,5 +114,5 @@ a[class='page-link']{
 }
 
 a[class='page-link']:focus{
-    border-radius: 5px !important;
+    border-radius: 8px !important;
 }

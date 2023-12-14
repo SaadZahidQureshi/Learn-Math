@@ -1,5 +1,14 @@
 
 
+.top-container-height-width{
+    width: 200px !important;
+    height: 250px;
+
+}
+.margin-btween{
+    margin: 60px !important;
+}
+
 .dashboar-head-container--categories{
     background-color: #F7A94A;
     padding: 36px 61px;
