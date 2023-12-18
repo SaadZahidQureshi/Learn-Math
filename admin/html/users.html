@@ -11,7 +11,8 @@
     />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/users.css" />
-
+    <!-- <link rel="stylesheet" href="../assets/components/Dynamic Calendar JavaScript/style.css">
+    <script src="../assets/components/Dynamic Calendar JavaScript/script.js"></script> -->
     <title>Users</title>
   </head>
   <body>
@@ -262,7 +263,8 @@
             >
               <div class="w-100">
                 <button
-                  class="searchbar-height w-100 border-0 search-border-search-btns bg-sidebar d-flex justify-content-center align-items-center gap-2"
+                data-target="datePickerButton1"
+                  class="date-picker-button searchbar-height w-100 border-0 search-border-search-btns bg-sidebar d-flex justify-content-center align-items-center gap-2"
                 >
                   <div class="">
                     <svg
@@ -278,15 +280,18 @@
                       />
                     </svg>
                   </div>
-                  <div class="">
-                    <p class="m-0 p-0 text-dark">Starting Date</p>
-                  </div>
+                    Starting Date 
+                    <!-- <p class="m-0 p-0 " id="date" >Starting Date</p> -->
+
                 </button>
               </div>
 
+
               <div class="w-100">
                 <button
-                  class="searchbar-height w-100 border-0 search-border-search-btns bg-sidebar d-flex justify-content-center align-items-center gap-2"
+                
+                data-target="datePickerButton2"
+                  class=" date-picker-button searchbar-height w-100 border-0 search-border-search-btns bg-sidebar d-flex justify-content-center align-items-center gap-2"
                 >
                   <div class="">
                     <svg
@@ -302,11 +307,64 @@
                       />
                     </svg>
                   </div>
-                  <div class="">
-                    <p class="m-0 p-0 text-dark">Ending Date</p>
-                  </div>
+                    Ending Date
+                    <!-- <p class="m-0 p-0 " id="date" >Ending Date</p> -->
+
                 </button>
               </div>
+
+              <!-- Date picker container -->
+              <div class="date-picker-container">
+                <!-- Calendar container -->
+                <div class="calendar-container" id="calendar">
+                  <div class="calendar-header">
+
+
+                  <svg  onclick="prevMonth()" width="25" height="25" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="21" cy="21" r="21" fill="white"/>
+                      <g clip-path="url(#clip0_1_24424)">
+                      <path d="M24.5098 12.8701L22.7298 11.1001L12.8398 21.0001L22.7398 30.9001L24.5098 29.1301L16.3798 21.0001L24.5098 12.8701Z" fill="#232740"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_1_24424">
+                      <rect width="24" height="24" fill="white" transform="translate(7 9)"/>
+                      </clipPath>
+                      </defs>
+                  </svg>
+                      
+                  <span id="current-month-year"></span>
+                    
+                  <svg onclick="nextMonth()" width="25" height="25" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="21" cy="21" r="21" transform="matrix(-1 0 0 1 42 0)" fill="white"/>
+                  <g clip-path="url(#clip0_1_24429)">
+                  <path d="M17.4902 12.8701L19.2702 11.1001L29.1602 21.0001L19.2602 30.9001L17.4902 29.1301L25.6202 21.0001L17.4902 12.8701Z" fill="#232740"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1_24429">
+                  <rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 35 9)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+
+                  </div>
+                  <div class="border-blue">
+                    <!-- <ul class="list-unstyled d-flex justify-content-evenly align-items-center m-0">
+                      <li class="">S</li>
+                      <li class="">M</li>
+                      <li class="">T</li>
+                      <li class="">W</li>
+                      <li class="">T</li>
+                      <li class="">F</li>
+                      <li class="">S</li>
+                    </ul>
+                    <hr class="m-0 p-0"> -->
+                    <!-- Calendar will be generated using JavaScript -->
+                    <ul class="calendar" id="calendar-list"></ul>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
 
@@ -1131,6 +1189,8 @@
 
 </div>
   <script src="../js/common.js"></script>
+  <script src="../js/datePicker.js"></script>
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -1,81 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Input</title>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        processEscapes: true
+      },
+      CommonHTML: { linebreaks: { automatic: true } },
+      "HTML-CSS": { linebreaks: { automatic: true } },
+      SVG: { linebreaks: { automatic: true } }
+    });
+  </script>
+</head>
+<body>
 
-<div class="d-flex flex-column  gap-4">
+  <label for="mathInput">Enter your math expression:</label>
+  <input type="text" id="mathInput" placeholder="e.g., $x^2$ or \( \sqrt{2} \)">
 
-  <div class="">
-      <button class="btn w-100 dropdown-toggle border-user-defind height border-radius border-radius-hover" aria-placeholder="Select Category" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select Category
-      </button>
-      <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Action two</a></li>
-          <li><a class="dropdown-item" href="#">Action three</a></li>
-      </ul>
-  </div>
+  <div id="output"></div>
 
-  <div class="">
-      <button class="btn w-100 dropdown-toggle border-user-defind height border-radius border-radius-hover" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select Level
-      </button>
-      <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Action two</a></li>
-          <li><a class="dropdown-item" href="#">Action three</a></li>
-      </ul>
-  </div>
+  <script type="text/javascript">
+    document.getElementById('mathInput').addEventListener('input', function() {
+      var mathInputValue = this.value;
+      var outputElement = document.getElementById('output');
+      
+      // Clear previous output
+      outputElement.innerHTML = '';
 
+      // Create a new span element for rendering
+      var newSpan = document.createElement('span');
+      newSpan.textContent = mathInputValue;
 
-  <div class="">
-      <div class="mb-3">
-          <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-          <textarea class="form-control  border-user-defind border-radius" id="exampleFormControlTextarea1" rows="10" placeholder="Add description here"></textarea>
-        </div>
-  </div>
-</div>
+      // Append the new span to the output element
+      outputElement.appendChild(newSpan);
 
+      // Use MathJax to typeset the math content
+      MathJax.Hub.Typeset(outputElement);
+    });
+  </script>
 
-
-<div class="d-flex flex-column h-100 w-100">
-
-  <div class=" h-50 border-radius">
-      <div class=" d-flex flex-column justify-content-center align-items-center gap-2 height-90 border-user-defind border-radius">
-          <div class="d-flex flex-column">
-              <a class="nav-link nav-link-upload-file rounded-border bg-color " href="#" onclick="toggleActive(this)">                                                       
-                  <svg class="sidebar__link-icon color-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                      <g clip-path="url(#clip0_1_11314)">
-                        <path d="M2.4375 17.9375H14.0625V29.5625C14.0625 30.631 14.9315 31.5 16 31.5C17.0685 31.5 17.9375 30.631 17.9375 29.5625V17.9375H29.5625C30.631 17.9375 31.5 17.0685 31.5 16C31.5 14.9315 30.631 14.0625 29.5625 14.0625H17.9375V2.4375C17.9375 1.36896 17.0685 0.5 16 0.5C14.9315 0.5 14.0625 1.36896 14.0625 2.4375V14.0625H2.4375C1.36896 14.0625 0.5 14.9315 0.5 16C0.5 17.0685 1.36896 17.9375 2.4375 17.9375Z" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1_11314">
-                          <rect width="32" height="32" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-              </a>                                                    
-          </div>
-          <p class="m-0 p-0 upload-text">Upload a video</p>
-        </div>
-  </div>
-
- 
-  <div class=" h-50 border-radius">
-      <div class=" d-flex flex-column justify-content-center align-items-center gap-2 height-90 border-user-defind border-radius">
-
-          <img class="category-img d-none w-100 h-100 rounded-1" src="" alt="cateogry-img">
-          <div class="d-flex flex-column upload-category-img-container">
-              <a class="nav-link nav-link-upload-file rounded-border bg-color " href="#" onclick="importData()">                                                       
-                  <svg class="sidebar__link-icon color-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                      <g clip-path="url(#clip0_1_11314)">
-                        <path d="M2.4375 17.9375H14.0625V29.5625C14.0625 30.631 14.9315 31.5 16 31.5C17.0685 31.5 17.9375 30.631 17.9375 29.5625V17.9375H29.5625C30.631 17.9375 31.5 17.0685 31.5 16C31.5 14.9315 30.631 14.0625 29.5625 14.0625H17.9375V2.4375C17.9375 1.36896 17.0685 0.5 16 0.5C14.9315 0.5 14.0625 1.36896 14.0625 2.4375V14.0625H2.4375C1.36896 14.0625 0.5 14.9315 0.5 16C0.5 17.0685 1.36896 17.9375 2.4375 17.9375Z" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1_11314">
-                          <rect width="32" height="32" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-              </a>                                                    
-          </div>
-          <p class="m-0 p-0 upload-text upload-img-text">Upload an image</p>
-        </div>
-  </div>
-</div> 
+</body>
+</html>

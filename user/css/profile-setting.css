@@ -82,6 +82,9 @@
 .w-sm-50{
     width: 50%;
 }
+.rounded-50{
+    border-radius: 50%;
+}
 
 @media (max-width: 540px) {
     .main-content{

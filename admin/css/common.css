@@ -105,3 +105,75 @@ body{
     box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.03) !important;
     border-top: 1px solid #4F9147 !important;
 }
+
+
+/* Style for the date picker container */
+.date-picker-container {
+    position: relative;
+    display: inline-block;
+   
+}
+
+/* Style for the button */
+.date-picker-button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Style for the calendar container */
+.calendar-container {
+    border-radius: 10px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+
+    z-index: 1000;
+    display:none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the calendar header */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #743FCB;
+    color: white;
+    border-top-right-radius:10px; 
+    border-top-left-radius:10px; 
+}
+/* Style for the calendar */
+.calendar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    text-align: center;
+}
+.border-blue{
+    border: 1px solid #743FCB;
+    border-bottom-right-radius:10px; 
+    border-bottom-left-radius:10px; 
+}
+.bold{
+    font-weight: 600;
+}
+.current-day{
+    background-color: #743FCB;
+    color: white;
+}
+/* Style for each calendar item */
+.calendar li {
+    display: inline-block;
+    width: 10%;
+    padding: 3px;
+    margin: 4px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+}
+.calendar li:hover{
+    background-color: #743FCB;
+    color: white;
+}

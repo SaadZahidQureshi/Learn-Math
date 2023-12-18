@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
         
     var items = document.getElementsByClassName('list-items');
-    var selectedYear = document.getElementById('year');
-    var dropdownContent = document.querySelector('.dropdown-content');
+    var selectedYear = document.getElementById('level');
+    var dropdownContent = document.querySelector('.dropdown-content-level');
 
-    var years = ['2013', '2014', '2015', '2016', '2017', '2018', '2019' ,'2020', '2021', '2022', '2023'];
+    var years = ['Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5','Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5'];
 
     years.forEach((year)=>{
         var listitems= document.createElement('li');

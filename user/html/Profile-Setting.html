@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/profile-setting.css">
     <title>Profile Settings</title>
   </head>
   <body>
@@ -104,14 +105,15 @@
                   <div class="d-flex align-items-center gap-4 profile-img-buttons">
                     <div class="mt-2">
                       <img
-                        class="profile-img rounded-5"
+                        class="profile-img rounded-50"
                         src="../assets/svg/profile 1-blue.svg"
                         alt="profile-img"
                       />
                     </div>
-                    <div class="">
+                    <div class=""> 
+                      <!-- event.preventDefault(); -->
                       <div class="d-flex flex-column align-items-center justify-content-between gap-2 profile-img-buttons__buttons">
-                        <button class="change-pic border-0" onclick="importData()">Change Picture</button>
+                        <button class="change-pic border-0" onclick="event.preventDefault(); return importData()">Change Picture</button>
                         <!-- <a type="file" class="change-pic text-decoration-none" href="">Change Picture</a> -->
                         <button class="delete-pic " onclick="deletePic()">Delete Picture</button>
                         <!-- <a type="file" class="delete-pic text-decoration-none" href="" >Delete Picture</a> -->
@@ -247,7 +249,8 @@
           </div>
           <div class="row justify-content-center m-0 p-0 mt-4 mb-5 mb-sm-0">
             <div class="d-flex justify-content-center align-items-center main-content ">
-              <button class="save-changes border-0 w-sm-50">Save Changes</button>
+              <!-- <a class="text-decoration-none text-light save-changes border-0 w-sm-50 d-flex justify-content-center align-items-center" href="../html/Home.html">Save Changes</a> -->
+              <button type="submit" class="save-changes border-0 w-sm-50">Save Changes</button>
             </div>
           </div>
         </form>
