@@ -17,16 +17,13 @@
   <link rel="stylesheet" href="../css/user-details.css">
   <link rel="stylesheet" href="../css/category.css">
   <link rel="stylesheet" href="../css/update-category.css">
-  <title>Add Category</title>
+  <title>View Question</title>
 
 
 </head>
 <body>
     <div class="container-fluid">
-
-
         <div class="row ">
-
             <!-- sidebar -->
             <div class="col-1 p-0 m-0  bg-sidebar ">
                 <div class="d-flex flex-column  align-items-center ">
@@ -141,13 +138,13 @@
                 <div class="row p-2 bg-sidebar shadow-sm">
                     <div class="col d-flex justify-content-center">
                         <div class= "">
-                            <h1 class="dashboard__heading">Add Category</h1>
+                            <h1 class="dashboard__heading">View Question</h1>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="row justify-content-center mt-5">
+                <div class="row justify-content-center mt-5 mb-5">
                   <div class="col-11 shadow-sm rounded-3 d-flex flex-column align-items-center  p-5 ">
                     
                             
@@ -160,6 +157,15 @@
 
                                         <div class="col  ">
                                             <div class="d-flex flex-column h-100 w-100 gap-4 ">
+
+                                                <div class="row w-100 ">
+                                                    <div class="col">
+                                                      <div class="position-relative mt-3 pb-0">
+                                                        <input class="input-control p-3" type="text" name="current-password" id="input-password" placeholder="Type question here...">
+                                                        <!-- <img class="input-svg bit-wide position-absolute" src="../assets/svgs/password-svg.svg" alt="level"> -->
+                                                      </div>
+                                                    </div>
+                                                  </div>
                                             
                                                   <div class="row w-100">
                                                     <div class="col">
@@ -191,58 +197,122 @@
                                                     </div>
                                                   </div>
 
-                                                  <div class="row w-100">
+                                                  <div class="row w-100 ">
+                                                    <div class="col">
+                                                      <div class="position-relative  pb-0">
+                                                        <div class="position-absolute svg-question ">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" viewBox="0 0 25 22" fill="none">
+                                                                <path d="M12 4C8.13403 4 5 7.13407 5 11C5 14.866 8.13403 18 12 18C15.8659 18 19 14.866 19 11C19 7.13407 15.8659 4 12 4ZM12 5.74999V11H6.75C6.75 8.10051 9.10052 5.74999 12 5.74999Z" fill="#743FCB"/>
+                                                              </svg>
+                                                        </div>
+                                                        <input class="input-control p-3" type="text" name="current-password" id="input-password" placeholder="Allocate minutes to solve">
+                                                        <!-- <img class="input-svg bit-wide position-absolute" src="../assets/svgs/password-svg.svg" alt="level"> -->
+                                                        
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                <div class="row w-100 ">
+                                                <div class="col">
+                                                    
+                                                <div class="img-file-container-height d-flex flex-column justify-content-center align-items-center gap-2  border-user-defind border-radius">
+                                                    <img class="category-img d-none rounded-1 w-100 h-100" src="" alt="cateogry-img">
+                                                    <div class=" d-flex flex-column upload-category-img-container justify-content-center ">
+                                                        <div class="">
+                                                            <a class=" nav-link nav-link-upload-file rounded-border bg-color " href="#" onclick="importData()">                                                       
+                                                                <svg class="sidebar__link-icon color-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                                                    <g clip-path="url(#clip0_1_11314)">
+                                                                    <path d="M2.4375 17.9375H14.0625V29.5625C14.0625 30.631 14.9315 31.5 16 31.5C17.0685 31.5 17.9375 30.631 17.9375 29.5625V17.9375H29.5625C30.631 17.9375 31.5 17.0685 31.5 16C31.5 14.9315 30.631 14.0625 29.5625 14.0625H17.9375V2.4375C17.9375 1.36896 17.0685 0.5 16 0.5C14.9315 0.5 14.0625 1.36896 14.0625 2.4375V14.0625H2.4375C1.36896 14.0625 0.5 14.9315 0.5 16C0.5 17.0685 1.36896 17.9375 2.4375 17.9375Z" />
+                                                                    </g>
+                                                                    <defs>
+                                                                    <clipPath id="clip0_1_11314">
+                                                                        <rect width="32" height="32" />
+                                                                    </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                            </a> 
+                                                        </div>  
+                                                                                                        
+                                                    </div>
+                                                    <div class="">
+                                                        <p class="m-0 p-0 upload-text upload-img-text">Upload an image</p> 
+                                                    </div>
+                                                    
+                                                </div>
+                                                    
+                                                </div>
+                                                </div>
+
+                                                <div class="row w-100 ">
+                                                    <div class="col">
+                                                      <div class="position-relative pb-0">
+                                                        <input class="input-control p-3" type="text" name="current-password" id="input-password" placeholder="Option a">
+                                                        <!-- <img class="input-svg bit-wide position-absolute" src="../assets/svgs/password-svg.svg" alt="level"> -->
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row w-100 ">
+                                                    <div class="col">
+                                                      <div class="position-relative pb-0">
+                                                        <input class="input-control p-3" type="text" name="current-password" id="input-password" placeholder="Option b">
+                                                        <!-- <img class="input-svg bit-wide position-absolute" src="../assets/svgs/password-svg.svg" alt="level"> -->
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row w-100 ">
+                                                    <div class="col">
+                                                      <div class="position-relative pb-0">
+                                                        <input class="input-control p-3" type="text" name="current-password" id="input-password" placeholder="Option c">
+                                                        <!-- <img class="input-svg bit-wide position-absolute" src="../assets/svgs/password-svg.svg" alt="level"> -->
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row w-100 ">
+                                                    <div class="col">
+                                                      <div class="position-relative pb-0">
+                                                        <input class="input-control p-3" type="text" name="current-password" id="input-password" placeholder="Option d">
+                                                        <!-- <img class="input-svg bit-wide position-absolute" src="../assets/svgs/password-svg.svg" alt="level"> -->
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col ">
+
+                                            <div class="d-flex flex-column h-100 w-100 gap-4 ">
+
+                                                <div class="row w-100">
+                                                    <div class="col">
+                                                        <div class="mt-3">
+                                                            <button class="btn w-100 dropdown-toggle border-user-defind height border-radius border-radius-hover" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Select right answer
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Action two</a></li>
+                                                                <li><a class="dropdown-item" href="#">Action three</a></li>
+                                                                <li><a class="dropdown-item" href="#">Action four</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+    
+                                                <div class="row w-100">
                                                     <div class="col">
                                                         <div class="">
                                                             <div class="">
-                                                                <textarea class="form-control  border-user-defind border-radius" id="exampleFormControlTextarea1" rows="12" placeholder="Add description here"></textarea>
+                                                                <textarea class="form-control  border-user-defind border-radius" id="exampleFormControlTextarea1" rows="15" placeholder="Add description here"></textarea>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                  
 
-                                                
-
-                                                
-                                            </div>
-                                        </div>
-
-                                        <div class="col d-flex flex-column gap-4">
-
-                                            <div class="row w-100 ">
-                                                <div class="col">
-                                                    <div class="img-file-container-height d-flex flex-column justify-content-center align-items-center gap-2  border-user-defind border-radius">
-                                                        <!-- <img class="category-img d-none rounded-1 w-100 h-100" src="" alt="cateogry-img"> -->
-                                                        <div class=" d-flex flex-column  justify-content-center ">
-                                                            <div class="">
-                                                                <a class=" nav-link nav-link-upload-file rounded-border bg-color " href="#" >                                                       
-                                                                    <svg class="sidebar__link-icon color-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                                                        <g clip-path="url(#clip0_1_11314)">
-                                                                        <path d="M2.4375 17.9375H14.0625V29.5625C14.0625 30.631 14.9315 31.5 16 31.5C17.0685 31.5 17.9375 30.631 17.9375 29.5625V17.9375H29.5625C30.631 17.9375 31.5 17.0685 31.5 16C31.5 14.9315 30.631 14.0625 29.5625 14.0625H17.9375V2.4375C17.9375 1.36896 17.0685 0.5 16 0.5C14.9315 0.5 14.0625 1.36896 14.0625 2.4375V14.0625H2.4375C1.36896 14.0625 0.5 14.9315 0.5 16C0.5 17.0685 1.36896 17.9375 2.4375 17.9375Z" />
-                                                                        </g>
-                                                                        <defs>
-                                                                        <clipPath id="clip0_1_11314">
-                                                                            <rect width="32" height="32" />
-                                                                        </clipPath>
-                                                                        </defs>
-                                                                    </svg>
-                                                                </a> 
-                                                            </div>  
-                                                                                                            
-                                                        </div>
-                                                        <div class="">
-                                                            <p class="m-0 p-0 upload-text ">Upload a video</p> 
-                                                        </div>
+                                                <div class="row w-100 ">
+                                                    <div class="col h-100">
                                                         
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row w-100 ">
-                                                <div class="col ">
-                                                    <div class="img-file-container-height d-flex flex-column justify-content-center align-items-center gap-2  border-user-defind border-radius">
-                                                        <img class="category-img d-none rounded-1 w-100 h-100" src="" alt="cateogry-img">
+                                                    <div class="video-file-container-height d-flex flex-column justify-content-center align-items-center gap-2  border-user-defind border-radius">
+                                                        <img class="category-img d-none rounded-1" src="" alt="cateogry-img">
                                                         <div class=" d-flex flex-column upload-category-img-container justify-content-center ">
                                                             <div class="">
                                                                 <a class=" nav-link nav-link-upload-file rounded-border bg-color " href="#" onclick="importData()">                                                       
@@ -261,65 +331,30 @@
                                                                                                             
                                                         </div>
                                                         <div class="">
-                                                            <p class="m-0 p-0 upload-text upload-img-text">Upload an image</p> 
+                                                            <p class="m-0 p-0 upload-text upload-img-text">Upload an video</p> 
                                                         </div>
                                                         
                                                     </div>
+                                                        
+                                                    </div>
                                                 </div>
+                                                
+                                                
                                             </div>
-                                            <!-- <div class="d-flex flex-column h-100 w-100 ">
-
-                                                <div class=" h-100 border-radius">
-                                                    <div class=" d-flex flex-column justify-content-center align-items-center gap-2 height-90 border-user-defind border-radius">
-                                                        <div class="d-flex flex-column">
-                                                            <a class="nav-link nav-link-upload-file rounded-border bg-color " href="#" onclick="toggleActive(this)">                                                       
-                                                                <svg class="sidebar__link-icon color-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                                                    <g clip-path="url(#clip0_1_11314)">
-                                                                    <path d="M2.4375 17.9375H14.0625V29.5625C14.0625 30.631 14.9315 31.5 16 31.5C17.0685 31.5 17.9375 30.631 17.9375 29.5625V17.9375H29.5625C30.631 17.9375 31.5 17.0685 31.5 16C31.5 14.9315 30.631 14.0625 29.5625 14.0625H17.9375V2.4375C17.9375 1.36896 17.0685 0.5 16 0.5C14.9315 0.5 14.0625 1.36896 14.0625 2.4375V14.0625H2.4375C1.36896 14.0625 0.5 14.9315 0.5 16C0.5 17.0685 1.36896 17.9375 2.4375 17.9375Z" />
-                                                                    </g>
-                                                                    <defs>
-                                                                    <clipPath id="clip0_1_11314">
-                                                                        <rect width="32" height="32" />
-                                                                    </clipPath>
-                                                                    </defs>
-                                                                </svg>
-                                                            </a>                                                    
-                                                        </div>
-                                                        <p class="m-0 p-0 upload-text">Upload a video</p>
-                                                    </div>
-                                                </div>
                                             
-                                            
-                                                <div class=" h-100 border-radius">
-                                                    <div class=" d-flex flex-column justify-content-center align-items-center gap-2 height-90 border-user-defind border-radius">
-                                            
-                                                        <img class="category-img d-none w-100 h-100 rounded-1" src="" alt="cateogry-img">
-                                                        <div class="d-flex flex-column upload-category-img-container">
-                                                            <a class="nav-link nav-link-upload-file rounded-border bg-color " href="#" onclick="importData()">                                                       
-                                                                <svg class="sidebar__link-icon color-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                                                    <g clip-path="url(#clip0_1_11314)">
-                                                                    <path d="M2.4375 17.9375H14.0625V29.5625C14.0625 30.631 14.9315 31.5 16 31.5C17.0685 31.5 17.9375 30.631 17.9375 29.5625V17.9375H29.5625C30.631 17.9375 31.5 17.0685 31.5 16C31.5 14.9315 30.631 14.0625 29.5625 14.0625H17.9375V2.4375C17.9375 1.36896 17.0685 0.5 16 0.5C14.9315 0.5 14.0625 1.36896 14.0625 2.4375V14.0625H2.4375C1.36896 14.0625 0.5 14.9315 0.5 16C0.5 17.0685 1.36896 17.9375 2.4375 17.9375Z" />
-                                                                    </g>
-                                                                    <defs>
-                                                                    <clipPath id="clip0_1_11314">
-                                                                        <rect width="32" height="32" />
-                                                                    </clipPath>
-                                                                    </defs>
-                                                                </svg>
-                                                            </a>                                                    
-                                                        </div>
-                                                        <p class="m-0 p-0 upload-text upload-img-text">Upload an image</p>
-                                                    </div>
-                                                </div>
-                                            </div>  -->
                                         </div>
 
                                     </div>
 
                                     <div class="row w-100">
-                                        <div class="col d-flex justify-content-center">
+                                        <div class="col d-flex justify-content-end">
                                             <div class="mt-4 w-50">
-                                                <a class="submit-input-control d-flex justify-content-center align-items-center text-decoration-none update-category-btn" href="../html/category.html?addAlert=true" type="submit" name="" id="add-category-btn">Save</a>
+                                                <a class="submit-input-control d-flex justify-content-center align-items-center text-decoration-none view-category-btn text-dark" href="../html/update-question.html" type="submit" name="" id="add-category-btn">Update</a>
+                                            </div>
+                                        </div>
+                                        <div class="col d-flex justify-content-start">
+                                            <div class="mt-4 w-50">
+                                                <a class="submit-input-control d-flex justify-content-center align-items-center text-decoration-none delete-category-btn" href="#" type="submit" name="" id="" data-bs-toggle="modal" data-bs-target="#user-successfully-delet-modal" >Delete</a>
                                             </div>
                                         </div>
                                     </div>

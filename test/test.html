@@ -1,130 +1,81 @@
-<html>
-  <head>
-    <title>JavaScript Donut Chart</title>
-    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-core.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-pie.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
 
-    <style type="text/css">      
-      html, body, #container { 
-        width: 100%; height: 100%; margin: 0; padding: 0; 
-      } 
-    </style>
-  </head>
-  <body>  
-    <div id="container"></div>
-    <script>
-      var myDoughnutChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: data,
-        options: {
-          plugins: {
-            doughnutlabel: {
-              labels: [
-                {
-                  text: 'The title',
-                  font: {
-                    size: '60'
-                  }
-                },
-                {
-                  text: getTotal,
-                  font: {
-                    size: '50'
-                  },
-                  color: 'grey'
-                },
-                {
-                  text: '$100.000',
-                  font: {
-                    size: '30'
-                  },
-                  color: 'red'
-                },
-                {
-                  text: '95%',
-                  font: {
-                    size: '45'
-                  },
-                color: 'green'
-                }
-              ]
-            }
-          }		
-        }
-      });
-      
-      var getTotal = function(myDoughnutChart) {
-        var sum = myDoughnutChart.config.data.datasets[0].data.reduce((a, b) => a + b, 0);
-        return `Total: ${sum}`;
-      }
-    </script>
-  </body>
-</html>
+<div class="d-flex flex-column  gap-4">
+
+  <div class="">
+      <button class="btn w-100 dropdown-toggle border-user-defind height border-radius border-radius-hover" aria-placeholder="Select Category" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Select Category
+      </button>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Action two</a></li>
+          <li><a class="dropdown-item" href="#">Action three</a></li>
+      </ul>
+  </div>
+
+  <div class="">
+      <button class="btn w-100 dropdown-toggle border-user-defind height border-radius border-radius-hover" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Select Level
+      </button>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Action two</a></li>
+          <li><a class="dropdown-item" href="#">Action three</a></li>
+      </ul>
+  </div>
+
+
+  <div class="">
+      <div class="mb-3">
+          <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+          <textarea class="form-control  border-user-defind border-radius" id="exampleFormControlTextarea1" rows="10" placeholder="Add description here"></textarea>
+        </div>
+  </div>
+</div>
 
 
 
+<div class="d-flex flex-column h-100 w-100">
 
+  <div class=" h-50 border-radius">
+      <div class=" d-flex flex-column justify-content-center align-items-center gap-2 height-90 border-user-defind border-radius">
+          <div class="d-flex flex-column">
+              <a class="nav-link nav-link-upload-file rounded-border bg-color " href="#" onclick="toggleActive(this)">                                                       
+                  <svg class="sidebar__link-icon color-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                      <g clip-path="url(#clip0_1_11314)">
+                        <path d="M2.4375 17.9375H14.0625V29.5625C14.0625 30.631 14.9315 31.5 16 31.5C17.0685 31.5 17.9375 30.631 17.9375 29.5625V17.9375H29.5625C30.631 17.9375 31.5 17.0685 31.5 16C31.5 14.9315 30.631 14.0625 29.5625 14.0625H17.9375V2.4375C17.9375 1.36896 17.0685 0.5 16 0.5C14.9315 0.5 14.0625 1.36896 14.0625 2.4375V14.0625H2.4375C1.36896 14.0625 0.5 14.9315 0.5 16C0.5 17.0685 1.36896 17.9375 2.4375 17.9375Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_11314">
+                          <rect width="32" height="32" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+              </a>                                                    
+          </div>
+          <p class="m-0 p-0 upload-text">Upload a video</p>
+        </div>
+  </div>
 
+ 
+  <div class=" h-50 border-radius">
+      <div class=" d-flex flex-column justify-content-center align-items-center gap-2 height-90 border-user-defind border-radius">
 
-// Doughnut chart config
-const doughnutConfig = {
-  type: "doughnut",
-  data: doughnutData,
-  options: {
-    maintainAspectRatio: false,
-    plugins:{
-      legend:{
-        labels:{
-          generateLabels: (chart)=>{
-            console.log(chart)
-            console.log(chart.data.datasets[0].backgroundColor)
-
-            return chart.data.datasets.map((dataset)=>({
-              text: dataset.labels,
-
-              fillStyle:dataset.backgroundColor,
-              fillStroke: dataset.backgroundColor,
-              fontColor: dataset.backgroundColor
-            }))
-          }
-        }
-      }
-    },
-  }
-  // plugins: [textCenter]
-};
-
-
-
-
-const doughnutConfig = {
-  type: "doughnut",
-  data: doughnutData,
-  options: {
-    plugins: {
-      legend: {
-        labels: {
-          font: {
-            size: 20,
-            weight: 700,
-            color: 'red'
-          },
-          boxWidth: 0,
-        },
-        display: true, // Hide the default legend
-        position: 'bottom',
-        // align: "end"
-      },
-      title: {
-        display: false,
-        text: "",
-        align: "start",
-      },
-    },
-    cutoutPercentage: 40,
-    maintainAspectRatio: false,
-  },
-
-  plugins: [textCenter]
-};
+          <img class="category-img d-none w-100 h-100 rounded-1" src="" alt="cateogry-img">
+          <div class="d-flex flex-column upload-category-img-container">
+              <a class="nav-link nav-link-upload-file rounded-border bg-color " href="#" onclick="importData()">                                                       
+                  <svg class="sidebar__link-icon color-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                      <g clip-path="url(#clip0_1_11314)">
+                        <path d="M2.4375 17.9375H14.0625V29.5625C14.0625 30.631 14.9315 31.5 16 31.5C17.0685 31.5 17.9375 30.631 17.9375 29.5625V17.9375H29.5625C30.631 17.9375 31.5 17.0685 31.5 16C31.5 14.9315 30.631 14.0625 29.5625 14.0625H17.9375V2.4375C17.9375 1.36896 17.0685 0.5 16 0.5C14.9315 0.5 14.0625 1.36896 14.0625 2.4375V14.0625H2.4375C1.36896 14.0625 0.5 14.9315 0.5 16C0.5 17.0685 1.36896 17.9375 2.4375 17.9375Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_11314">
+                          <rect width="32" height="32" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+              </a>                                                    
+          </div>
+          <p class="m-0 p-0 upload-text upload-img-text">Upload an image</p>
+        </div>
+  </div>
+</div> 

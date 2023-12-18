@@ -88,6 +88,9 @@ body{
     padding: 8px 45px;
     
 }
+.modal-btn-ok{
+    background: #743FCB;
+}
 
 .alert-heading{
     color: #28A745;
@@ -96,4 +99,9 @@ body{
 
 .alert-body{
     font-size: 12px;
+}
+.bg-color-alert{
+    background: #F3FAF2 !important;
+    box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.03) !important;
+    border-top: 1px solid #4F9147 !important;
 }

@@ -18,8 +18,10 @@
     justify-content: space-between;
 
 }
+
+
 .dropdown-menu{
-    width: 500px !important;
+    width: 33%;
 }
 .update-category-btn{
     font-size: 18px
