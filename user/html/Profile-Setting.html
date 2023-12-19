@@ -115,7 +115,7 @@
                       <div class="d-flex flex-column align-items-center justify-content-between gap-2 profile-img-buttons__buttons">
                         <button class="change-pic border-0" onclick="event.preventDefault(); return importData()">Change Picture</button>
                         <!-- <a type="file" class="change-pic text-decoration-none" href="">Change Picture</a> -->
-                        <button class="delete-pic " onclick="deletePic()">Delete Picture</button>
+                        <button class="delete-pic " onclick="event.preventDefault(); return deletePic()">Delete Picture</button>
                         <!-- <a type="file" class="delete-pic text-decoration-none" href="" >Delete Picture</a> -->
                       </div>
                     </div>

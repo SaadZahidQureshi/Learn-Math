@@ -108,7 +108,7 @@ window.addEventListener('load', function() {
   }
   let selectedIndex = -1
   const items = document.querySelectorAll('.slider-items');
-  console.log(typeof(items))
+  // console.log(typeof(items))
   items.forEach((item,index) =>{
     if(item.getAttribute('data-name') == uni_id){
       selectedIndex = index

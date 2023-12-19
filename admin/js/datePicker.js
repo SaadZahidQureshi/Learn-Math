@@ -48,12 +48,42 @@ document.addEventListener("DOMContentLoaded", function() {
       var targetButton = selectedDates.get('currentButton');
       datePickerButtons.forEach(function(button) {
         if (button.getAttribute('data-target') === targetButton) {
-
-          // startdate = document.getElementById('start-date')
-          button.innerText = day + '/' + (month + 1) + '/' + year;
+          // Clear existing text content of the button
+          button.childNodes.forEach(child => {
+              if (child.nodeType === Node.TEXT_NODE) {
+                  button.removeChild(child);
+              }
+          });
+      
+          // Create a text node with the updated date
+          const dateTextNode = document.createTextNode(day + '/' + (month + 1) + '/' + year);
+      
+          // Append the updated text node to the button
+          button.appendChild(dateTextNode);
+      
+          // Update selected dates
           selectedDates.set(targetButton, new Date(year, month, day));
-          console.log(day, month, year)
-        }
+          console.log(day, month, year);
+      }
+      
+      
+      
+      
+        // if (button.getAttribute('data-target') === targetButton) {
+        //   button.innerText = '';
+        //   const dateTextNode = document.createTextNode(day + '/' + (month + 1) + '/' + year);
+
+        //   // Append the text node to the button
+        //   button.appendChild(dateTextNode);
+      
+        //   // Update selected dates
+        //   selectedDates.set(targetButton, new Date(year, month, day));
+
+        //   // startdate = document.getElementById('start-date')
+        //   // button.innerText = day + '/' + (month + 1) + '/' + year;
+        //   // selectedDates.set(targetButton, new Date(year, month, day));
+        //   // console.log(day, month, year)
+        // }
       });
       hideCalendar();
     }

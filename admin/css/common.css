@@ -46,8 +46,11 @@ body{
     background-color: #743FCB;
 }
 
-.active {
+.active-side-bar-menu{
     background-color: #743FCB;
+}
+.active-svg-color{
+    fill: white;
 }
 .active .def-color {
     fill: white;

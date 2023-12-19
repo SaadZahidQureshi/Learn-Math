@@ -8,6 +8,16 @@ MathJax.Hub.Config({
     SVG: { linebreaks: { automatic: true } }
   });
 
+MathJax.Hub.Config({   
+    tex2jax: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      processEscapes: true
+    },
+    CommonHTML: { linebreaks: { automatic: true } },
+    "HTML-CSS": { linebreaks: { automatic: true } },
+    SVG: { linebreaks: { automatic: true } }
+  });
+
 
   document.getElementById('inputquestion').addEventListener('input', function() {
     var mathInputValue = this.value;
