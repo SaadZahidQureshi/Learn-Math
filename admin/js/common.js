@@ -137,34 +137,39 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-// questionUpdateAlert
+
 
 
 // active-side-bar-menu 
 // active-svg-color
 document.addEventListener("DOMContentLoaded", function() {
-  // navlinks = document.getElementsByClassName('nav-link')
-  // console.log(navlinks)
+
+  function getQueryParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+  }
 
   const id = window.location.href.split('?')[1].split('=')[1];
-  // console.log(parseInt(url))
-  // console.log(id)
-
-  // navlinks[id].classList.add('active-side-bar-menu')
-  // console.log(navlinks[id].firstElementChild.classList.remove('def-color'))
-  // console.log(navlinks[id].firstElementChild.classList.add('active-svg-color'))
-
+  const testid = getQueryParam('current')
+  console.log(testid)
 
   const items = document.querySelectorAll('.nav-link');
 
   items.forEach((item,index) =>{
     // console.log(item)
 
+    // if(testid == item.getAttribute('data-name')){
+    //   item.classList.add('active-side-bar-menu')
+    //   item.firstElementChild.classList.remove('def-color')
+    //   item.firstElementChild.classList.add('active-svg-color')
+    // }
+
     if(index == id){
       items.forEach(item =>{
         item.classList.remove('active-side-bar-menu')
         // console.log(navlinks[id].firstElementChild.classList.remove('def-color'))
       })
+      // console.log(item.getAttribute('data-name'))
       item.classList.add('active-side-bar-menu')
       item.firstElementChild.classList.remove('def-color')
       item.firstElementChild.classList.add('active-svg-color')
